@@ -1,0 +1,59 @@
+# Second Eye — CEO / Business Status
+
+> Single source of truth for the business side. Last updated: 2026-06-30.
+> (Repo-wide status lives in the monorepo's top-level `STATUS.md`, maintained jointly. This file is the CEO/business view.)
+
+## One-liner
+Affordable, offline, hands-free AI glasses that tell a blind person what's in their path. Jackie Wu's Conrad-winning "YCane," realized.
+
+## Direction (decided)
+- **Path A:** offline, sub-$700, no-subscription assistive glasses, sold direct, funded via grants / VA / voc-rehab, architected to grow into a broader offline visual co-pilot.
+- **Wedge = MOBILITY** (real-time obstacle / path detection while walking) as the reason-to-buy; **reading / scene as a free bonus, never the pitch.**
+- **Why:** reading is commoditized to free (Seeing AI, Be My AI, Lookout) and OrCam — the $4,490 reading-hardware king — collapsed proving you can't charge for it. Mobility is the one job phones can't do, so it's the only durable hardware wedge.
+
+## Engineering alignment (from Jackie's new monorepo, 2026-06-30) — STRONG
+Jackie's `engineering/` side independently converged on the same thesis (no coordination):
+- Pivoted from AR sports glasses → visual assistance (2026-06-29).
+- Core = obstacle detection + bone-conduction "step 1.5 m ahead." **Mobility-first — matches our wedge.**
+- Cites OrCam $4,490 and WeWALK $850 as competitors — same framing as our teardown.
+- **Added a ToF depth sensor (VL53L5CX)** — directly de-risks the "can a thin frame detect obstacles" physics concern I flagged.
+- **Form factor: lightweight glasses + neck-hung compute box** (V1 short cable, V2 wireless). Updates our "sub-50 g standalone" assumption: compute lives in a neck box, solving thermal / battery / compute.
+- Chips: RK3576 to validate; RV1126B leaning for production.
+- Blocked on parts: LubanCat 3 + IMX415 (~¥600) + VL53L5CX ToF (~¥40), pending purchase.
+
+## What's validated (market research, adversarially verified)
+- Price + offline + no-subscription + glasses = real white space. Cheapest mobility wearable competitor is Ara $2,750; the only glasses-form mobility product (.lumen) is €9,999.
+- Mobility is the defensible hardware wedge (funded category: NOA, .lumen, Ara, Glide, WeWALK).
+- Offline / on-device is unique — the whole field leans cloud + subscription.
+- Payer path real (VA provides "electronic mobility devices"; voc-rehab funds smart glasses). Regulatory manageable (FDA general-wellness off-ramp; position as assistive, not medical).
+
+## What's risky / needs validation
+1. **Form-factor physics** — can glasses + ToF detect curbs / poles / branches reliably outdoors? (ToF + neck box help; validate with a real-sidewalk demo on the board.)
+2. **Will users pay $400–700 for mobility hardware?** (Discovery calls.)
+3. **Abandonment** (~29%, mobility worst) and the **safety-trust bar** — one missed obstacle kills trust.
+4. **Free-app floor** for the reading bonus; cheap "AI glasses" entrants coming (e.g. EchoVision).
+5. **Market smaller / low-vision-skewed** — truly-blind core <1M US; low-vision (~3x bigger) may want a display we're not building.
+
+## Competitive snapshot
+OrCam (reading, $4,490) — DEAD / exited vision. Envision (reading, $2,499) — struggling. eSight (low-vision display, $4,950). Mobility field: .lumen €9,999, Ara $2,750, NOA £800 + sub, Glide $1,199 + sub, WeWALK $850–1,150. Free apps (Seeing AI / Be My AI / Lookout) own reading. Full teardown: `strategy/competitive-landscape.md`.
+
+## IP status
+Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 build. Cleanups: check WFLA student-IP policy; get a no-claim note from old YCane teammates; drop "YCane" → "Second Eye"; clean US founder IP-assignment at incorporation. Details: `strategy/ip-status.md`.
+
+## Document index (this folder)
+- `strategy/second-eye-design-doc.md` — the plan (Path A, premises, approaches, assignment)
+- `strategy/market-research-2026-06-29.md` — research synthesis
+- `strategy/competitive-landscape.md` — full competitor teardown
+- `strategy/ip-status.md` — IP / ownership
+- `discovery/interview-guide.md` — discovery-call script (the gate)
+- `discovery/recruiting-plan.md` — recruiting + outreach templates
+- `research/deep-research-raw-2026-06-29.json` — raw research archive
+- `todo.md` — action items
+
+## Org / folder structure (migration in progress, 2026-06-30)
+- **NEW monorepo:** github.com/Jaxkiewu0628/second_eye → cloned to `~/dev/second_eye_repo/`. Structure: `engineering/` (Jackie), `business/` (CEO — us), `design/` (shared), top-level `STATUS.md` (joint).
+- **This folder** (`~/dev/second_eye/ceo/`) is our CEO work; it moves INTO the monorepo's `business/` folder.
+- The old `~/dev/second_eye/` scaffold (with the legacy `ar-sports-glasses` clone) is superseded by the monorepo's `engineering/` and can be retired after the move.
+
+## Next (the gate) — see `todo.md`
+Outdoor obstacle-detection demo on the board + 8–10 discovery calls. Everything waits on these.

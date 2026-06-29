@@ -1,0 +1,67 @@
+# Second Eye — Product Direction (Tier-1 strategic blockers)
+
+> The strategic decisions that shape product direction, worked in dependency order **S1 → S2 → S3**.
+> These sit ABOVE the execution/validation gates in `../discovery/risk-blocks.md`. Started 2026-06-30.
+> Status legend: 🟢 decided · 🟡 leaning, needs confirmation · ⚪ open.
+
+## Why these come first
+`risk-blocks.md` answers "can we build it and will they keep wearing it." This file answers the prior questions: **what are we, can we win, will it make money.** You don't perfect the demo for a game you shouldn't enter. Order is a dependency chain: ideology is the denominator for profit; competition decides if the game is winnable; profit decides if it's worth winning.
+
+---
+
+## S1 — IDEOLOGY: are we a *device* or a *platform*?  🟡
+
+**The question:** is Second Eye a single-purpose blind-mobility aid, or the beachhead of an offline visual-AI platform with mobility as the wedge? This sets every other denominator — pricing, roadmap, cap table, hiring, how we read competition.
+
+### Path A — The Device (single-purpose mobility aid)
+- **What it is:** best-in-class obstacle/path detection, hands-free, offline. One job, done superbly. Reading is a free bonus.
+- **Roadmap:** depth over breadth — lighter, cheaper, longer battery, more reliable detection.
+- **Business shape:** honest SOM ~2–6k units / ~$1–3M over 3 yr (per sizing research). A small business or grant/mission-funded social enterprise. **Not venture-scale on its own.**
+- **Fundraising:** grants, disability-tech funds, impact investors, VA/voc-rehab channel. Hard to raise traditional VC — TAM too small for venture math.
+- **Competition exposure:** narrow surface; big tech won't build a dedicated blind device (too small for them). But vulnerable to a $300 general AI-glasses entrant adding an "obstacle mode."
+- **Risk:** the graveyard's verdict — *"a single-function gadget is a feature, not a company"* (Sunu died, BuzzClip pivoted to software). You build a beloved tool that can't sustain a company, or stay forever grant-dependent.
+- **Strength:** focus = you actually nail the safety-critical job, which IS the trust game (Block 1). Mission clarity. Easiest path to being genuinely best at the one thing.
+
+### Path B — The Platform (offline visual co-pilot; mobility is the wedge)
+- **What it is:** an offline, on-device visual-AI engine worn on the face. Mobility is the *reason-to-buy* and the safety-critical hook, but the architecture (camera + on-device models + audio, fully offline, no subscription) is a general "perceive and narrate the physical world" stack.
+- **Roadmap:** breadth on one hardware base — obstacle detection → indoor nav → object/text/scene → contextual assistance → later optional low-vision SKU. Software-upgradeable; the offline AI stack + real-world walking data are the compounding asset.
+- **Business shape:** TAM expands past blind-mobility (low-vision 3× bigger; aging/eldercare adjacent). The $0-marginal-cost offline moat compounds. **Venture-scale story becomes tellable.**
+- **Fundraising:** "the offline visual cortex — landing in the highest-pain, most-defensible beachhead (blind mobility) first." Classic narrow→broad (Tesla Roadster→Model 3; Amazon books→everything).
+- **Competition exposure:** bigger surface, nearer Meta/Apple/Google roadmaps — but offline + no-subscription + safety-grade latency is a real wedge vs cloud incumbents, and a *stack* survives a big-tech feature-add where a *gadget* doesn't.
+- **Risk:** **focus dilution** — in a safety-critical product, "do everything, nail nothing" = dead on Block 1 trust. Premature platform-itis. And the obvious expansion segment (low-vision) wants a *display* we said we won't build → could force a hardware fork early.
+- **Strength:** the only version that's venture-scale; the version where the offline moat (triple-proven: OrCam reading, Aira per-minute, Soundscape Azure shutdown) actually pays off; the version that survives commoditization.
+
+### Comparison
+| | Path A — Device | Path B — Platform |
+|---|---|---|
+| Scale | Small business / social enterprise | Venture-scale |
+| Capital | Grants, impact | VC-fundable |
+| Moat over time | Erodes (it's a feature) | Compounds (it's a stack) |
+| Focus risk | Low (focused) | High (must resist sprawl) |
+| Trust/safety execution | Easiest to nail | Must protect from distraction |
+| Mission clarity | Highest | Risk of drift |
+
+### The core tension — the synthesis
+**Build like A, story like B.** V1 must be a ruthlessly focused, best-in-class *mobility device* (the trust game punishes distraction; the wedge is the only way in), but the *company thesis, architecture, and capital strategy* must be *platform*, or the math can't support a venture and we die as a feature. **The fatal mistake is doing it backwards** — building broad/unfocused (mediocre detection) while the market only rewards a device that nails the one job.
+
+### Mission-drift caveat (a product-ideology line, not just strategy)
+This is assistive tech for blind people. "Platform/venture ambition" must never become "abandon the hardest-to-serve core for the bigger non-disabled market." **Blind mobility is not a stepping-stone we leave behind — it's the proving ground and the soul.** Expansion must be *adjacent and downstream of* the core users, never *at the expense of* them. This boundary is a values call to set explicitly.
+
+### Recommendation (🟡 leaning) — **Platform, executed through a Device-grade V1 wedge** ("wedge-first platform")
+Why: the standalone-device version is a near-certain *small* business (the sizing math says so) and the graveyard says single-function gadgets die; meanwhile the offline/$0-marginal-cost moat is exactly what a *platform* compounds on. So adopt the platform thesis, but enforce device-grade focus on V1.
+
+### What this means for product direction NOW (if confirmed)
+1. **Architecture (note for Jackie's repo — we plan, he builds):** build the offline visual stack as a *modular general engine* where obstacle-detection is module 1 — not a hardcoded beeper. The generality is the asset.
+2. **V1 scope:** ONLY mobility, nailed. Reading stays a free bonus, off the pitch. Resist all feature creep until detection clears the Block-1 bar.
+3. **Hardware:** keep V1 display-free and cheap for the blind wedge; a low-vision *display variant* is a future SKU, never V1.
+4. **Story vs ship:** pitch the platform, sell the device. Keep both honest.
+5. **Moat to protect:** offline models + accumulated real-world walking data = the compounding asset; guard it.
+
+### Decision
+🟡 **Leaning Path B via device-grade wedge.** Open sub-questions for Frankie: (1) adopt "wedge-first platform" as the ideology? (2) where is the mission-expansion boundary? (3) confirm the architecture instruction to Jackie.
+
+---
+
+## S2 — COMPETITION: moat or commoditization?  ⚪ (next)
+
+## S3 — PROFIT: is there a business, and what kind?  ⚪ (after S2)

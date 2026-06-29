@@ -25,7 +25,7 @@ Jackie's `engineering/` side independently converged on the same thesis (no coor
 - Price + offline + no-subscription + glasses = real white space. Cheapest mobility wearable competitor is Ara $2,750; the only glasses-form mobility product (.lumen) is €9,999.
 - Mobility is the defensible hardware wedge (funded category: NOA, .lumen, Ara, Glide, WeWALK).
 - Offline / on-device is unique — the whole field leans cloud + subscription.
-- Payer path real (VA provides "electronic mobility devices"; voc-rehab funds smart glasses). Regulatory manageable (FDA general-wellness off-ramp; position as assistive, not medical).
+- Payer path **partly verified** (research 2026-06-30, `research/reimbursement-hcpcs-2026-06-30.md`): VA.gov confirms no-cost "electronic mobility devices" and funds eSight/IrisVision 100% — a real channel; voc-rehab is real but **employment-gated** (must serve an Individualized Plan for Employment). **Caveats:** every *proven* precedent is a low-vision **display** device — VA funding of our **obstacle/mobility** niche is *unconfirmed* (the #1 VA-call question); **Medicare/private insurance is a dead end** (statutory low-vision exclusion; eSight/IrisVision never won it — drop "insurance-covered"). Regulatory: FDA assistive/general-wellness off-ramp is favorable and does **not** block VA/voc-rehab (eSight is Class 1, yet VA-funded).
 
 ## What's risky / needs validation
 1. **Form-factor physics** — can glasses + ToF detect curbs / poles / branches reliably outdoors? (ToF + neck box help; validate with a real-sidewalk demo on the board.)
@@ -45,8 +45,12 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 - `strategy/market-research-2026-06-29.md` — research synthesis
 - `strategy/competitive-landscape.md` — full competitor teardown
 - `strategy/ip-status.md` — IP / ownership
-- `discovery/interview-guide.md` — discovery-call script (the gate)
+- `discovery/interview-guide.md` — discovery-call script (the gate), tagged to risk blocks
 - `discovery/recruiting-plan.md` — recruiting + outreach templates
+- `discovery/risk-blocks.md` — **validation register: the 6 risk blocks, each with its own kill condition + instrument**
+- `research/global-market-sizing-2026-06-30.md` — global sizing (43M blind / 295M MSVI; TAM/SAM/SOM)
+- `research/reimbursement-hcpcs-2026-06-30.md` — payer reality (VA verified, our niche unproven, Medicare dead)
+- `research/failure-graveyard-2026-06-30.md` — post-mortems + kill patterns → design/GTM rules
 - `research/deep-research-raw-2026-06-29.json` — raw research archive
 - `todo.md` — action items
 

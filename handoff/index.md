@@ -28,7 +28,7 @@
 ## Active / 进行中
 | ID | Title / 标题 | Dir / 方向 | State / 状态 | Ball in court / 当前在谁 | Updated | File |
 |----|------|------|------|------|------|------|
-| _–_ | _(none yet — copy `_TEMPLATE.md` to start the first handoff)_ | | | | | |
+| HO-001 | 交接通道连通性测试 / channel round-trip test | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-06-30 | [HO-001](HO-001-channel-test.md) |
 
 ## Archive / 归档
 | ID | Title / 标题 | Dir / 方向 | Closed | File |

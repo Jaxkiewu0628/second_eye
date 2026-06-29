@@ -19,7 +19,7 @@ Jackie's `engineering/` side independently converged on the same thesis (no coor
 - **Added a ToF depth sensor (VL53L5CX)** — directly de-risks the "can a thin frame detect obstacles" physics concern I flagged.
 - **Form factor: lightweight glasses + neck-hung compute box** (V1 short cable, V2 wireless). Updates our "sub-50 g standalone" assumption: compute lives in a neck box, solving thermal / battery / compute.
 - Chips: RK3576 to validate; RV1126B leaning for production.
-- Blocked on parts: LubanCat 3 + IMX415 (~¥600) + VL53L5CX ToF (~¥40), pending purchase.
+- Parts: LubanCat 3 + IMX415 (~¥600) + VL53L5CX ToF (~¥40) — **ordered, ETA ~2026-07-01** (per Jackie, `../handoff/` HO-001). Once they land, the parts blocker clears and V1 board bring-up can start.
 
 ## What's validated (market research, adversarially verified)
 - Price + offline + no-subscription + glasses = real white space. Cheapest mobility wearable competitor is Ara $2,750; the only glasses-form mobility product (.lumen) is €9,999.

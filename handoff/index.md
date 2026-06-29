@@ -28,7 +28,7 @@
 ## Active / 进行中
 | ID | Title / 标题 | Dir / 方向 | State / 状态 | Ball in court / 当前在谁 | Updated | File |
 |----|------|------|------|------|------|------|
-| _–_ | _(none)_ | | | | | |
+| HO-002 | 平台能力路线图（未来软件功能）/ platform capability roadmap | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-06-30 | [HO-002](HO-002-platform-roadmap.md) |
 
 ## Archive / 归档
 | ID | Title / 标题 | Dir / 方向 | Closed | File |

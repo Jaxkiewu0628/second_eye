@@ -1,0 +1,53 @@
+# HO-002 — 平台能力路线图（未来软件功能）+ 架构留口 / platform capability roadmap
+
+| Field / 字段 | Value / 值 |
+|---|---|
+| **From → To / 方向** | `CEO → ENG` |
+| **State / 状态** | 📤 OPEN |
+| **Priority / 优先级** | normal（方向输入，不急；V1 不受影响） |
+| **Created / 创建** | 2026-06-30 |
+| **Updated / 更新** | 2026-06-30 |
+| **Related / 关联** | `business/strategy/product-direction.md`（S1）· `engineering/STATUS.md` |
+
+**TL;DR (bilingual / 双语一句话)**
+- **EN:** V1 stays mobility-only. But we're leaning "platform" — the same offline glasses gain capabilities over time. Here's the future-function roadmap; please keep the perception engine **modular** so these are cheap to add later, and give a feasibility read on our chips.
+- **中文：** V1 只做避障不变。但我们倾向"平台"路线——同一副离线眼镜以后逐步加功能。这是未来功能路线图，请把感知引擎设计成**模块化**的，让以后加功能是写软件而不是重做；并给个在咱们芯片上的可行性判断。
+
+## Context / 背景
+来自 S1（`business/strategy/product-direction.md`）的"设备 vs 平台"讨论。结论倾向 **平台（以设备级 V1 为楔子）**：V1 只做避障，但同一副离线眼镜（摄像头 + ToF + 端侧 AI + 骨传导）本质是**通用感知**，避障只是第一个模块。差别不在 V1（两条路 V1 都一样），而在**底下的引擎**——写死的避障器，还是一个能逐步加模块的通用引擎。这条交接把我们设想的未来功能列给你，让 V1 的架构从第一天就留好口子。
+
+## 未来软件功能 / future functions（同一硬件，离线，以软件逐步加上）
+| # | 功能 | 用户听到 | 何时 |
+|---|---|---|---|
+| 1 | **避障 / 路径**（楔子） | "前方有杆，1.5m 处下台阶" | **V1 — 只做这个** |
+| 2 | 室内寻路 / 导航 | "左手边有门，前方电梯" | later |
+| 3 | 文字朗读（OCR→语音，免费附赠） | "牌子上写 EXIT" | later |
+| 4 | 找东西（物体定位） | "钥匙在你右手边桌上" | later |
+| 5 | 场景 / 人物描述 | "厨房，有人坐在桌边" / "Sarah 走过来了" | later |
+| 6 | （可选）过路口 / 楼梯 / 公交站识别 | … | later |
+
+## The ask / 需求（现在只要这些，别现在写功能）
+1. **不要现在做表里 2–6。** V1 还是只做避障（模块 1）。
+2. **唯一的请求：** 把感知管线设计成**模块化 / 通用**——避障 = 模块 1，留好加模块 2/3 的接口，让以后加功能是"写软件"而不是"重写引擎"。
+3. **给个可行性判断：** 在你选的算力（RK3576 验证 → RV1126B 量产，3 TOPS）上，表里这些功能——哪些离线可行？哪些吃算力 / 需要额外模型或传感器？推荐的上线顺序是什么？
+4. **反对也欢迎：** 如果你判断"从第一天就做通用引擎"在硬件上代价过大、不如先写死避障，**直接回 `❓ NEEDS INFO` 说清楚理由**。这正是 S1 卡住的那个叉（"从第一天就做通用引擎 yes/no"），你的工程判断会直接帮 CEO 拍板。
+
+**Definition of Done / 完成标准**
+- [ ] 表里每个功能：离线可行性 + 算力 / 传感器判断
+- [ ] 一句话架构建议：模块化通用引擎 **可行** / **不值得**（附理由）
+- [ ] 推荐的功能上线顺序
+
+## Constraints & non-goals / 约束与非目标
+- **V1 范围不变**：只做避障。这条不是要你现在写功能，是架构 + 方向输入。
+- 全程**离线、无订阅**（这是我们的护城河，不能破）。
+- 非目标：不在这条里定 UI / 交互细节。
+
+## References / 参考
+- `business/strategy/product-direction.md` — S1：上面的能力表 + "设备 vs 平台"的那个叉（含为什么这是"公司"而不是"单品"）
+- `engineering/STATUS.md` — 你那边的芯片 / 链路现状
+
+## Thread / 对话线
+- **2026-06-30 [CEO]** — 初始路线图。这条不急、V1 不受影响；你上板之余给个"可行性 + 模块化架构"判断即可。你的回复会直接喂回 S1 决策。
+
+## Resolution / 结论
+_（待 ENG：可行性判断 + 架构建议 + 上线顺序填这里；CEO 据此拍 S1 的叉，必要时另开 HO 跟进。）_

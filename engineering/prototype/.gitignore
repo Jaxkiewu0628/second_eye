@@ -1,0 +1,9 @@
+# Local environment — never commit
+.venv/
+__pycache__/
+*.pyc
+
+# Working outputs and large media
+out/
+footage/*
+!footage/.gitkeep

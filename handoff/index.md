@@ -28,10 +28,9 @@
 ## Active / 进行中
 | ID | Title / 标题 | Dir / 方向 | State / 状态 | Ball in court / 当前在谁 | Updated | File |
 |----|------|------|------|------|------|------|
-| _–_ | _(none)_ | | | | | |
+| HO-002 | 平台能力路线图 + 分体式架构必要性 | `CEO → ENG` | 📤 OPEN | **CEO** | 2026-07-01 | [HO-002](HO-002-platform-roadmap.md) |
 
 ## Archive / 归档
 | ID | Title / 标题 | Dir / 方向 | Closed | File |
 |----|------|------|------|------|
-| HO-002 | 平台能力路线图 / platform capability roadmap | `CEO → ENG` | 2026-07-01 | [HO-002](HO-002-platform-roadmap.md) |
 | HO-001 | 交接通道连通性测试 / channel round-trip test | `CEO → ENG` | 2026-07-01 | [HO-001](HO-001-channel-test.md) |

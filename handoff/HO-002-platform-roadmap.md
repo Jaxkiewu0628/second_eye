@@ -3,10 +3,10 @@
 | Field / 字段 | Value / 值 |
 |---|---|
 | **From → To / 方向** | `CEO → ENG` |
-| **State / 状态** | ✅ 已完成 |
+| **State / 状态** | 📤 OPEN |
 | **Priority / 优先级** | normal（方向输入，不急；V1 不受影响） |
 | **Created / 创建** | 2026-06-30 |
-| **Updated / 更新** | 2026-07-01 |
+| **Updated / 更新** | 2026-07-01 (addendum) |
 | **Related / 关联** | `business/strategy/product-direction.md`（S1）· `engineering/STATUS.md` |
 
 **TL;DR (bilingual / 双语一句话)**
@@ -71,5 +71,40 @@
 
   一句话给 S1 拍叉：**平台路线可行，从第一天做通用引擎成本极低（1–2 天），强烈推荐；V1 交付完全不受影响。**
 
+- **2026-07-01 [ENG] — Addendum: integrated vs split-body architecture**
+
+  Following the platform feasibility analysis above, a key hardware architecture question emerged: can the device be fully integrated into the glasses frame (一体式), or is a split-body design (分体式, glasses frame + neck-worn compute box) required?
+
+  **Verdict: split-body (分体式) is required. Continuous sensing kills integrated battery life.**
+
+  **Why integrated worked for sports glasses but fails for Second Eye:**
+  The prior sports-glasses architecture relied on a duty-cycle model — AI activates for 10–15 seconds per trigger, then the SoC deep-sleeps. Average power ~50–80 mW → 300 mAh battery lasts ~14–20 hours.
+
+  Second Eye is fundamentally different: a visually impaired user needs **continuous** obstacle detection while walking. There is no idle window. YOLO runs every step.
+
+  **Continuous-sensing power budget:**
+
+  | Chip | Continuous active power | 300 mAh glasses frame | 5 000 mAh neck box |
+  |---|---|---|---|
+  | RK3576 (validation) | ~1.2 W | **~55 min** ❌ | **~15 h** ✅ |
+  | RV1126B (production target) | ~0.7 W | **~1.6 h** ❌ | **~26 h** ✅ |
+
+  Target for a useful device: full outing = 4–8 h. Neither chip meets this in a glasses frame.
+
+  **Three reasons split-body is required:**
+
+  1. **Battery** — A glasses frame holds ~300 mAh (Ray-Ban Meta benchmark). Continuous YOLO + ToF + camera draws 0.7–1.2 W → only 55 min–1.6 h runtime. A 5 000 mAh neck box at the same draw gives 15–26 h — a full day.
+
+  2. **Thermal** — RK3576 dissipates ~1.2 W continuously inside a sealed temple arm against skin. Surface temperature would exceed the 40 °C safe-contact limit. RV1126B (~0.7 W) is better but still marginal in a sealed ~14 mm arm. The neck box uses a large aluminium housing with natural convection — no thermal risk.
+
+  3. **Weight** — Large battery + heatspreader + chip in the frame would push total weight well past the 50 g target. The neck box offloads all of this; the glasses frame only needs camera, ToF, bone-conduction transducer, microphones, and ESP32-S3 — achievable at ~30 g.
+
+  **When might integrated become viable?**
+  With RV1126B + an 800 mAh custom battery (adds ~15 g, total ~45 g) → ~2.5 h. Still short of a full outing. A genuinely full-day integrated device requires a chip 3–5× more efficient than RV1126B (e.g. a future MediaTek AR chip) or tolerance for <3 h runtime with a charging case. Recommend revisiting for V3+.
+
+  **Recommendation to CEO:** Lock split-body as the V1 architecture. The neck box is not a workaround — it is the correct load-bearing design for continuous sensing. Revisit integrated for V3+ if a lower-power SoC becomes accessible.
+
 ## Resolution / 结论
-平台路线可行。感知引擎模块化代价极低（1–2 天定接口），推荐从 V1 就做。各功能中 OCR 和交通灯/楼梯最容易加（YOLO 扩类 + model swap）；自由场景描述受 3 TOPS 限制，需云端或等更强芯片。推荐上线顺序：避障→交通灯/OCR→室内寻路→场景描述。CEO 可据此拍 S1 的平台 vs 单品叉。
+平台路线可行。感知引擎模块化代价极低（1–2 天定接口），推荐从 V1 就做。各功能中 OCR 和交通灯/楼梯最容易加（YOLO 扩类 + model swap）；自由场景描述受 3 TOPS 限制，需云端或等更强芯片。推荐上线顺序：避障→交通灯/OCR→室内寻路→场景描述。
+
+**补充（2026-07-01）：** 分体式架构（颈挂计算盒）是必要的，不是妥协——持续感知场景下眼镜框 300mAh 只撑 55 分钟到 1.6 小时，颈挂盒 5000mAh 才能满足全天出行。V1 锁定分体式，V3+ 再评估一体式。

@@ -3,10 +3,10 @@
 | Field / 字段 | Value / 值 |
 |---|---|
 | **From → To / 方向** | `CEO → ENG` |
-| **State / 状态** | 📤 OPEN |
+| **State / 状态** | ✅ 已完成 |
 | **Priority / 优先级** | normal |
 | **Created / 创建** | 2026-06-30 |
-| **Updated / 更新** | 2026-06-30 |
+| **Updated / 更新** | 2026-07-01 |
 | **Related / 关联** | `handoff/index.md` · `handoff/_TEMPLATE.md` · `business/status.md` · `engineering/STATUS.md` |
 
 **TL;DR (bilingual / 双语一句话)**
@@ -38,6 +38,7 @@
 
 ## Thread / 对话线
 - **2026-06-30 [CEO]** — 通道刚建好，这是第一条真实交接，测往返。看到请回一句、更新状态；到货情况顺手确认下。收到就知道通道通了。
+- **2026-07-01 [ENG]** — 通道收到，往返测试通过。到货情况：鲁班猫3 + IMX415 和 VL53L5CX ToF 均已下单，预计 2026-07-01（明天）到货。阻塞解除后即可上板开始 V1 链路验证。
 
 ## Resolution / 结论
-_（待 ENG 填：回复 + 状态更新 + 到货确认完成后写这里，并在 index.md 把本行移到 Archive。）_
+通道往返流程验证通过。到货确认：鲁班猫3 + IMX415 + VL53L5CX ToF 预计 2026-07-01 到货，工程侧阻塞即将解除，V1 验证可启动。

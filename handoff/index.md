@@ -13,6 +13,8 @@
 
 **Language / 语言:** write the body in the **receiver's** working language (CEO→ENG: **中文**; ENG→CEO: **English**). Always keep the one-line **TL;DR bilingual**. Frankie reads both. / 正文用 **接收方** 的语言（CEO→ENG 用 **中文**；ENG→CEO 用 **英文**）；TL;DR 永远 **中英双语**。
 
+**Example / 示例:** see [`HO-000-EXAMPLE.md`](HO-000-EXAMPLE.md) — a filled specimen showing every section (not a live task). / 看 `HO-000-EXAMPLE.md`，一条填好的示例（非真实任务）。
+
 ## States / 状态
 | State | Meaning / 含义 |
 |---|---|

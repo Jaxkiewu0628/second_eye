@@ -41,6 +41,32 @@
 | Trust/safety execution | Easiest to nail | Must protect from distraction |
 | Mission clarity | Highest | Risk of drift |
 
+### What "platform" concretely means (the articulation that landed with Frankie)
+**One line:** the same glasses, whose *abilities grow over time through software* — the blind user's **offline "eyes"** that launch with the most dangerous job (what's in your path) and expand to more jobs on the **same hardware**.
+
+The enabling fact: the hardware (camera + ToF + on-device AI + bone conduction) is **general-purpose perception**. "Obstacle ahead" is only the first thing we teach it to see. Same device, new offline software:
+
+| Capability | What the user hears | Ships |
+|---|---|---|
+| **Obstacle / path** (the wedge) | "pole ahead, step down in 1.5 m" | **V1 — only this** |
+| Indoor wayfinding | "door on your left, elevator ahead" | later |
+| Text reading (free bonus) | "the sign says EXIT" | later |
+| Find my things | "keys on the table, to your right" | later |
+| Scene / person | "a kitchen; someone seated at a table" | later |
+
+None require new hardware — they're more offline software on the same glasses.
+
+**Device vs platform — the difference is *underneath*, not in V1:**
+- **Device:** ships obstacle detection, then iterates *on obstacle detection*. One axis; saturates the small blind-mobility SOM.
+- **Platform:** ships the **identical** mobility V1, but builds the general offline-perception engine underneath — so each later capability is a new reason-to-wear, a new adjacent user, on the same hardware + moat. **Platform is a sequence, not a bigger V1.**
+
+**Why that's a company (and a single-purpose device isn't):**
+1. **Fights abandonment (Block 2)** — glasses useful in many daily moments stay on the face; a walk-only gadget gets drawered.
+2. **Compounds the moat** — offline models + real-world data across many tasks; each capability makes the next cheaper / harder to copy.
+3. **Revenue without a subscription** (moat kept) — more daily value supports the price; more SKUs/segments; **offline B2B/institutional** (the Aira-Access sponsorship model, but $0 marginal cost = actually profitable); eventually licensing the offline engine.
+
+**What it is NOT** (so the word doesn't mislead): ❌ a developer SDK / app store · ❌ consumer AR for everyone (Meta's game — we'd lose) · ❌ a cloud/subscription platform (kills the entire moat).
+
 ### The core tension — the synthesis
 **Build like A, story like B.** V1 must be a ruthlessly focused, best-in-class *mobility device* (the trust game punishes distraction; the wedge is the only way in), but the *company thesis, architecture, and capital strategy* must be *platform*, or the math can't support a venture and we die as a feature. **The fatal mistake is doing it backwards** — building broad/unfocused (mediocre detection) while the market only rewards a device that nails the one job.
 
@@ -59,6 +85,17 @@ Why: the standalone-device version is a near-certain *small* business (the sizin
 
 ### Decision
 🟡 **Leaning Path B via device-grade wedge.** Open sub-questions for Frankie: (1) adopt "wedge-first platform" as the ideology? (2) where is the mission-expansion boundary? (3) confirm the architecture instruction to Jackie.
+
+### ⏸ Paused here — resume point (2026-06-30)
+Frankie accepted the platform articulation above; discussion parked to finish the handoff channel. The S1 decision reduces to **one fork**:
+
+> **Build the offline engine to be *general* from day one** — modular, obstacle-detection = module 1, with nav / text / scene / find-my-things as later software on the same hardware — **even though V1 ships only mobility?**
+
+- **Yes** → locks the platform identity; the architecture instruction becomes **HO-001**, the first real CEO→ENG handoff to Jackie.
+- **No** → we stay a focused single-purpose device.
+- **CEO-Claude lean:** **yes** — architecting for generality costs little now and is the line between "a feature" and "a company." (Guardrail: V1 still ships mobility-only; generality lives *underneath*, it is not scope creep.)
+
+**Next session:** settle this fork → set S1 🟡→🟢 → open **S2 (competition / defensibility)**.
 
 ---
 

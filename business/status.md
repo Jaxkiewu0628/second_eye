@@ -72,6 +72,7 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 | HO-002 | **S1 platform decision** — future-functions roadmap + eng feasibility/architecture | ✅ done (archived) | S1 拍板 🟢 platform + freemium + blind-core; Jackie: modular engine ✅, split-body required, scene-desc needs cloud |
 | HO-003 | **Roadmap sync** — multi-version product roadmap (`strategy/roadmap.md`), eng review | ✅ done (archived) | Jackie confirmed order/split-body/thermal; 3 fixes backfilled — **battery 13.7h→5–6h**, V2 wireless needs HW rev, OCR de-duped |
 | HO-004 | **S1 decided + medical opportunity** — notify Jackie of the 3 decisions + the caregiver/vitals expansion idea | 📤 ball in **ENG** | FYI / 前瞻；未来方向不影响 V1；医疗机会为未验证假设 |
+| HO-005 | **Bet 1 tech proof** — weight + battery, evidence-backed (power budget + per-part weight) | 📤 ball in **ENG** | close product-bet 1 needs proof, not a chat one-liner; paper calc OK, mark what awaits board test |
 
 ## Next (the gate) — see `todo.md`
 Outdoor obstacle-detection demo on the board + 8–10 discovery calls. Everything waits on these.

@@ -54,6 +54,8 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 - `research/global-market-sizing-2026-06-30.md` — global sizing (43M blind / 295M MSVI; TAM/SAM/SOM)
 - `research/reimbursement-hcpcs-2026-06-30.md` — payer reality (VA verified, our niche unproven, Medicare dead)
 - `research/failure-graveyard-2026-06-30.md` — post-mortems + kill patterns → design/GTM rules
+- `research/competitive-data-2026-07.json` — **全球竞品原始数据(157 家,价格/离线/订阅/来源)— scan 的可复用底数据**
+- `research/competitive-pricing-2026-07.md` — **价位 × 功能对比表(从上面提取)**
 - `research/deep-research-raw-2026-06-29.json` — raw research archive
 - `todo.md` — action items
 

@@ -68,6 +68,7 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 | HO-000 | Example specimen (format demo) | 🗄️ example | not a real task |
 | HO-001 | Channel round-trip test (+ parts-arrival sync) | ✅ done | system verified; parts ordered, ETA ~2026-07-01 |
 | HO-002 | **S1 platform decision** — future-functions roadmap + eng feasibility/architecture | 🔧 ball in **CEO** | Jackie: modular engine from day 1 ✅ (~1–2 days, zero V1 risk); split-body **required**; free-form scene-desc needs **cloud** |
+| HO-003 | **Roadmap sync** — multi-version product roadmap (`strategy/roadmap.md`), eng review | 📤 ball in **ENG** | Jackie sanity-checks form-factor/compute/battery/order; writes fixes in Thread, CEO backfills the file |
 
 ## Next (the gate) — see `todo.md`
 Outdoor obstacle-detection demo on the board + 8–10 discovery calls. Everything waits on these.

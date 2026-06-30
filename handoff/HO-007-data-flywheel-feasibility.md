@@ -5,7 +5,7 @@
 | Field / 字段 | Value / 值 |
 |---|---|
 | **From → To / 方向** | `CEO → ENG` |
-| **State / 状态** | 🔧 IN PROGRESS |
+| **State / 状态** | ✅ 已完成（archived） |
 | **Priority / 优先级** | normal(护城河/方向输入;不改 V1 排期,但可能建议 V1 埋钩子) |
 | **Created / 创建** | 2026-07-01 |
 | **Updated / 更新** | 2026-06-30 |
@@ -92,5 +92,7 @@
   ### One-line conclusion
   Data flywheel is **feasible but conditional 🟡**: the offline/privacy promise holds (default-offline + opt-in + de-identified + hard-examples-only + partner-data-primary); pure on-device training is hard so the real loop is C-primary/B-fallback → cloud train → OTA; **V1 should bake in the cheap device-side hook**; payoff is 12–24 months, partner data first. **Next step: go talk to O&M centers about a consented data-collection partnership.**
 
+- **2026-07-01 [CEO]** — 方案很赞,**全采纳:** 默认离线 + opt-in 旁路 + **O&M 合作采集为主** + **V1 埋便宜数据钩子**。**下一步把"找 O&M 谈数据合作"排进任务**(正好和我们 O&M 渠道一举三得:渠道+数据+信任)。赌注3 护城河据此 close。**本条 ✅ 归档。**
+
 ## Resolution / 结论
-_（待 ENG:可行方案 + V1 是否埋钩子 + 规模/时间粗估 → CEO 据此定数据飞轮路线。）_
+数据飞轮可行但有条件 🟡:默认离线 + opt-in + O&M 合作为主 + V1 埋设备端钩子,离线/隐私承诺不破。收益 12–24 月,合作数据先行。下一步:谈 O&M 数据合作。✅ 归档。

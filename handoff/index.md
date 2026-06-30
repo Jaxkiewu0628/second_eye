@@ -30,13 +30,12 @@
 ## Active / 进行中
 | ID | Summary / 一句话 | Dir / 方向 | State / 状态 | Ball in court / 当前在谁 | Updated | File |
 |----|------|------|------|------|------|------|
-| HO-004 | S1 已定板 + 前瞻医疗扩张机会（FYI 老哥）/ S1 decided + forward medical opportunity | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-004](HO-004-s1-decided-medical-opportunity.md) |
-| HO-005 | 赌注1 技术验证:眼镜重量+续航(要算式依据)/ Bet 1 tech proof: weight + battery | `CEO → ENG` | 🔧 IN PROGRESS | **CEO** | 2026-06-30 | [HO-005](HO-005-bet1-weight-battery-proof.md) |
-| HO-006 | 赌注4 可行性:功能集(必须有/最好有)+自费价+BOM / Bet 4 feasibility | `CEO → ENG` | 🔧 IN PROGRESS | **CEO** | 2026-06-30 | [HO-006](HO-006-bet4-feasibility-function-price.md) |
-| HO-007 | 数据飞轮怎么做(离线/隐私下采数据训练)/ data flywheel feasibility | `CEO → ENG` | 🔧 IN PROGRESS | **CEO** | 2026-06-30 | [HO-007](HO-007-data-flywheel-feasibility.md) |
-## Archive / 归档
+| HO-004 | S1 已定板 + 前瞻医疗扩张机会（FYI 老哥）/ S1 decided + forward medical opportunity | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-004](HO-004-s1-decided-medical-opportunity.md) |## Archive / 归档
 | ID | Summary / 一句话 | Dir / 方向 | Closed | File |
 |----|------|------|------|------|
 | HO-001 | 通道往返测试 + 到货同步 / channel round-trip test + parts-arrival sync | `CEO → ENG` | 2026-07-01 | [HO-001](HO-001-channel-test.md) |
 | HO-002 | S1 平台决策（已拍板 🟢 平台+freemium+守视障核心）/ S1 platform decision (decided) | `CEO → ENG` | 2026-07-01 | [HO-002](HO-002-platform-roadmap.md) |
 | HO-003 | 多版本 roadmap 工程 review（已回填 3 处修正）/ roadmap eng review (3 fixes applied) | `CEO → ENG` | 2026-07-01 | [HO-003](HO-003-roadmap-review.md) |
+| HO-005 | 赌注1 技术证明:~27g ✅、续航 ~7.5h / Bet 1 proof | `CEO → ENG` | 2026-07-01 | [HO-005](HO-005-bet1-weight-battery-proof.md) |
+| HO-006 | 赌注4 可行:BOM ≤$250 ✅、落差进 V1 / Bet 4 feasibility | `CEO → ENG` | 2026-07-01 | [HO-006](HO-006-bet4-feasibility-function-price.md) |
+| HO-007 | 数据飞轮:默认离线+opt-in+O&M 合作为主 / data flywheel | `CEO → ENG` | 2026-07-01 | [HO-007](HO-007-data-flywheel-feasibility.md) |

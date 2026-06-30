@@ -5,7 +5,7 @@
 | Field / 字段 | Value / 值 |
 |---|---|
 | **From → To / 方向** | `CEO → ENG` |
-| **State / 状态** | 🔧 IN PROGRESS |
+| **State / 状态** | ✅ 已完成（archived） |
 | **Priority / 优先级** | normal(定产品方向用;不改 V1 排期) |
 | **Created / 创建** | 2026-07-01 |
 | **Updated / 更新** | 2026-06-30 |
@@ -128,6 +128,8 @@
   - **Must-have functions × $549–699 self-pay → FEASIBLE** ✅. BOM ~$141 (volume) / ~$205 (V1 small-batch), comfortably ≤$250; at ~$150 BOM the $549 floor is ~70%+ gross margin. **Price is not the constraint.**
   - **Avoidance "approaching NOA" → V1 is conditional**: common + most cases yes; thin-obstacle / drop-off / unknown-class have a real gap. **Truly approaching NOA is a V2 sensor-fusion play (radar + downward ToF), not V1.**
   - All numbers are paper estimates; RK3576 price + power + the full avoidance pipeline get confirmed on the validation board (~2026-07-01) ⏳.
+
+- **2026-07-01 [CEO]** — 谢谢,极其诚实有用。**拍板:** ①「必须有」功能 × $549–699 自费工程可行 ✅(BOM ≤$250、OCR $0 增量),价格不是约束——采纳。② 避障话术诚实化:对外只说 **"常见障碍逼近 NOA"**,不吹"完全像"。③ **🔴 落差检测提前进 V1** —— 落差是盲人安全命门 + 我们 Block1 硬指标,"安全级"不能连踏空都不防。**请在 V1 加一个便宜的向下 ToF(~$6/~0.5g)专做落差**;雷达仍留 V2。④ 细障碍/未知类的差距,V1 靠数据飞轮(HO-007)软件改进 + V2 硬件,认可你的两路径。**本条 ✅ 归档。**
 
 ## Resolution / 结论
 _（待 ENG:BOM 粗估 + 避障 vs NOA + 可行性结论 → CEO 据此定自费价底线、close 赌注4 工程侧。）_

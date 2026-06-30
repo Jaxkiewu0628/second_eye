@@ -35,7 +35,7 @@ Jackie's `engineering/` side independently converged on the same thesis (no coor
 5. **Market smaller / low-vision-skewed** — truly-blind core <1M US; low-vision (~3x bigger) may want a display we're not building.
 
 ## Competitive snapshot
-OrCam (reading, $4,490) — DEAD / exited vision. Envision (reading, $2,499) — struggling. eSight (low-vision display, $4,950). Mobility field: .lumen €9,999, Ara $2,750, NOA £800 + sub, Glide $1,199 + sub, WeWALK $850–1,150. Free apps (Seeing AI / Be My AI / Lookout) own reading. Full teardown: `strategy/competitive-landscape.md`.
+OrCam (reading, $4,490) — DEAD / exited vision. Envision (reading, $2,499) — struggling. eSight (low-vision display, $4,950). Mobility field: .lumen €9,999, Ara $2,750, NOA £800 + sub, Glide $1,199 + sub, WeWALK $850–1,150. Free apps (Seeing AI / Be My AI / Lookout) own reading. Full teardown: `strategy/competitive-landscape.md`. **Post-pivot global scan (2026-07, 157 competitors): `strategy/competitive-scan-2026-07.md` — key finding: NO feature moat (offline / no-sub / agent all commoditized); only a `mobility-safety + sub-$700 + 30g split-form + Western reimbursement` *combination* is still open, window 12–24 mo. Watch NOA (function) + Meta (distribution).**
 
 ## IP status
 Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 build. Cleanups: check WFLA student-IP policy; get a no-claim note from old YCane teammates; drop "YCane" → "Second Eye"; clean US founder IP-assignment at incorporation. Details: `strategy/ip-status.md`.
@@ -43,7 +43,8 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 ## Document index (this folder)
 - `strategy/second-eye-design-doc.md` — the plan (Path A, premises, approaches, assignment)
 - `strategy/market-research-2026-06-29.md` — research synthesis
-- `strategy/competitive-landscape.md` — full competitor teardown
+- `strategy/competitive-landscape.md` — full competitor teardown (pre-pivot)
+- `strategy/competitive-scan-2026-07.md` — **post-pivot global scan (157 competitors): honest moat verdict + S2 conclusions**
 - `strategy/ip-status.md` — IP / ownership
 - `strategy/product-direction.md` — **Tier-1 strategic blockers (S1 ideology → S2 competition → S3 profit); the device-vs-platform decision**
 - `discovery/interview-guide.md` — discovery-call script (the gate), tagged to risk blocks

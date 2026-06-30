@@ -108,6 +108,18 @@ Build the modular general engine from V1 (Jackie confirmed ~1–2 days, zero V1 
 
 ---
 
-## S2 — COMPETITION: moat or commoditization?  ⚪ (next)
+## S2 — COMPETITION: moat or commoditization?  🟡 (扫描完成 2026-07-01；待 CEO 拍 messaging/渠道)
+> 全球扫描 157 竞品（23 高威胁 · 36 巨头 · 24 死）→ 详见 `strategy/competitive-scan-2026-07.md`。
+
+**核心结论（诚实）：今天没有"功能"护城河，只有"组合 + 时机 + 渠道"护城河，窗口 12–24 个月。**
+- 四条原始差异化里**三条已同质化**：**离线**（NOA/.lumen/Ara/Apple 都离线 = table stakes）、**无订阅**（NOA/Ara/EchoVision 都有）、**自学习 agent**（Halo/Rabbit/OpenAI io 在做 = 不可守）。
+- **唯一还空着的** = `mobility-safety-grade + sub-$700 + 30g 分体轻形态 + 西方支付渠道(VA/voc-rehab)` 的**组合交集**——每条边都有人逼近，没人占满。
+
+**头号盯防：NOA（功能基准）+ Meta（分发/品类定义，正把"AI 助盲=免费"钉进心智）。** Meta/Apple 主动让出 mobility-safety（Apple Magnifier 自述"不可导航"）——这是我们的角落。
+
+**待 CEO 拍的三件（S2 收尾）：**
+1. **messaging 重写**：头条改成"**安全级实时避障 + sub-$700 + 最轻分体眼镜**"；把离线/无订阅/agent 退为支撑，不再当独立卖点（否则显 me-too）。
+2. **渠道 = 真护城河，优先于功能**：尽早启动 **VA/voc-rehab 报销** + 盲人社区信任（NFB/ACB）。比加功能更耐久。
+3. **agent 降级**为 wedge 内增强（"越用越懂你的路线"）；**医疗护工 = phase-2**（护士 AR overlay 已抢跑），今天不碰。
 
 ## S3 — PROFIT: is there a business, and what kind?  ⚪ (after S2)

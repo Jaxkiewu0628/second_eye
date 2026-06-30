@@ -31,7 +31,7 @@
 | ID | Summary / 一句话 | Dir / 方向 | State / 状态 | Ball in court / 当前在谁 | Updated | File |
 |----|------|------|------|------|------|------|
 | HO-004 | S1 已定板 + 前瞻医疗扩张机会（FYI 老哥）/ S1 decided + forward medical opportunity | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-004](HO-004-s1-decided-medical-opportunity.md) |
-| HO-005 | 赌注1 技术验证:眼镜重量+续航(要算式依据)/ Bet 1 tech proof: weight + battery | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-005](HO-005-bet1-weight-battery-proof.md) |
+| HO-005 | 赌注1 技术验证:眼镜重量+续航(要算式依据)/ Bet 1 tech proof: weight + battery | `CEO → ENG` | 🔧 IN PROGRESS | **CEO** | 2026-06-30 | [HO-005](HO-005-bet1-weight-battery-proof.md) |
 ## Archive / 归档
 | ID | Summary / 一句话 | Dir / 方向 | Closed | File |
 |----|------|------|------|------|

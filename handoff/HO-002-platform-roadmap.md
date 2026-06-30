@@ -5,7 +5,7 @@
 | Field / 字段 | Value / 值 |
 |---|---|
 | **From → To / 方向** | `CEO → ENG` |
-| **State / 状态** | 📤 OPEN |
+| **State / 状态** | ✅ 已完成（archived） |
 | **Priority / 优先级** | normal（方向输入，不急；V1 不受影响） |
 | **Created / 创建** | 2026-06-30 |
 | **Updated / 更新** | 2026-07-01 (addendum) |
@@ -105,6 +105,8 @@
   With RV1126B + an 800 mAh custom battery (adds ~15 g, total ~45 g) → ~2.5 h. Still short of a full outing. A genuinely full-day integrated device requires a chip 3–5× more efficient than RV1126B (e.g. a future MediaTek AR chip) or tolerance for <3 h runtime with a charging case. Recommend revisiting for V3+.
 
   **Recommendation to CEO:** Lock split-body as the V1 architecture. The neck box is not a workaround — it is the correct load-bearing design for continuous sensing. Revisit integrated for V3+ if a lower-power SoC becomes accessible.
+
+- **2026-07-01 [CEO]** — **S1 三个决定全部拍板：** ① **平台**（会长大的产品，模块化引擎从 V1 就搭）；② **freemium**——基础完整离线免费无订阅、云端增强可选付费不强制；③ **核心服务对象不变（视障）**，扩张走可选云端层、不跑偏。详见 `business/strategy/product-direction.md` S1。另有一个前瞻医疗扩张机会见 **HO-004**。谢谢你的可行性判断——本条 ✅ 归档。
 
 ## Resolution / 结论
 平台路线可行。感知引擎模块化代价极低（1–2 天定接口），推荐从 V1 就做。各功能中 OCR 和交通灯/楼梯最容易加（YOLO 扩类 + model swap）；自由场景描述受 3 TOPS 限制，需云端或等更强芯片。推荐上线顺序：避障→交通灯/OCR→室内寻路→场景描述。

@@ -9,7 +9,7 @@
 
 ---
 
-## S1 — IDEOLOGY: are we a *device* or a *platform*?  🟡
+## S1 — IDEOLOGY: are we a *device* or a *platform*?  🟢 DECIDED
 
 **The question:** is Second Eye a single-purpose blind-mobility aid, or the beachhead of an offline visual-AI platform with mobility as the wedge? This sets every other denominator — pricing, roadmap, cap table, hiring, how we read competition.
 
@@ -83,19 +83,28 @@ Why: the standalone-device version is a near-certain *small* business (the sizin
 4. **Story vs ship:** pitch the platform, sell the device. Keep both honest.
 5. **Moat to protect:** offline models + accumulated real-world walking data = the compounding asset; guard it.
 
-### Decision
-🟡 **Leaning Path B via device-grade wedge.** Open sub-questions for Frankie: (1) adopt "wedge-first platform" as the ideology? (2) where is the mission-expansion boundary? (3) confirm the architecture instruction to Jackie.
+### Decision — 🟢 DECIDED (2026-07-01, Frankie)
+All three sub-questions settled / 三个子问题全部拍板：
 
-### ⏸ Paused here — resume point (2026-06-30)
-Frankie accepted the platform articulation above; discussion parked to finish the handoff channel. The S1 decision reduces to **one fork**:
+**1. Identity = Platform（会长大的产品，设备级 V1 为楔子）🟢.**
+Build the modular general engine from V1 (Jackie confirmed ~1–2 days, zero V1 risk); V1 still ships mobility-only, generality lives underneath. / 从 V1 就搭模块化通用引擎；V1 仍只做避障，通用性在底层。
+- **Frankie's vision add:** a future **cloud agent** that self-updates its memory & architecture — learns each user's habits, gets more tailored the more it's used. / 未来云端 agent：自更新记忆与架构，越用越贴合用户习惯。
 
-> **Build the offline engine to be *general* from day one** — modular, obstacle-detection = module 1, with nav / text / scene / find-my-things as later software on the same hardware — **even though V1 ships only mobility?**
+**2. Model = freemium（基础免费离线 + 可选付费云端）🟢.**
+- **Base = full offline core, free, no subscription** — works completely without paying or connecting; the moat + the blind-safety guarantee. / 基础 = 完整离线核心，免费、无订阅，不付费/不联网也能正常用。
+- **Optional = paid subscription unlocks cloud** (scene description, the learning agent…) — **never required, opt-in.** / 可选 = 付月费打通云服务，不强制、可选。
+- **Hard line:** safety/mobility core **always offline**; the no-subscription promise holds for the base. This freemium split *is* the fusion mechanism for expansion (decision 3). / 保命/避障核心永远离线；基础无订阅承诺不变；这个 freemium 切分就是扩张的融合机制。
 
-- **Yes** → locks the platform identity; the architecture instruction becomes **HO-001**, the first real CEO→ENG handoff to Jackie.
-- **No** → we stay a focused single-purpose device.
-- **CEO-Claude lean:** **yes** — architecting for generality costs little now and is the line between "a feature" and "a company." (Guardrail: V1 still ships mobility-only; generality lives *underneath*, it is not scope creep.)
+**3. Mission = blind-core fixed; expansion welcome via the freemium fusion 🟢.**
+- Core users **stay visually-impaired** (the start). Expansion to other domains is **embraced** but routes through the optional-cloud layer — so it never diverts the free blind-core product. / 核心服务对象不变 = 视障；扩张走可选云端层，绝不挤占免费的盲人核心。
+- **Sequence:** first prove tech + idea + demand on the blind wedge → then port to adjacent domains (easy, no drift). / 先用第一轮证明技术+想法+需求，再移植到别的领域，不跑偏。
 
-**Next session:** settle this fork → set S1 🟡→🟢 → open **S2 (competition / defensibility)**.
+### 🌟 Standout expansion opportunity (Frankie) — for the investor story · ⚠️ UNVALIDATED
+**Arc / 大故事:** blind wedge → **hospital caregivers / 护工** → **medical-industry smart glasses / 医疗行业智能眼镜.**
+- **Hypothesized pain (NOT researched — verify in discovery):** critically-ill / at-risk patients need **real-time vital-sign monitoring**; if a caregiver could see those numbers **right on their glasses**, response is faster & easier. / 假设痛点（未调查，待 discovery 验证）：危重/濒危病人需实时体征监控；护工若能在眼镜上随时看数值，更及时方便。
+- Worth pre-building a stronger story around this; flagged as a hypothesis to validate (verify-don't-assert). **Notified to Jackie → HO-004.**
+
+**S1 = 🟢 closed.** HO-002 → CEO decision replied + archived. Next block: **S2 (competition)** — other blocks later per Frankie.
 
 ---
 

@@ -7,7 +7,7 @@
 Affordable, offline, hands-free AI glasses that tell a blind person what's in their path. Jackie Wu's Conrad-winning "YCane," realized.
 
 ## Direction (decided)
-- **Path A:** offline, sub-$700, no-subscription assistive glasses, sold direct, funded via grants / VA / voc-rehab, architected to grow into a broader offline visual co-pilot.
+- **Path A:** offline, sub-$700, **freemium** assistive glasses — the **full mobility core works offline, free, no subscription**; an **optional paid cloud tier** adds enhancements (scene description, a learning agent). Sold direct, funded via grants / VA / voc-rehab; architected to grow into a broader offline visual co-pilot. **(S1 🟢 decided 2026-07-01 — `strategy/product-direction.md`.)**
 - **Wedge = MOBILITY** (real-time obstacle / path detection while walking) as the reason-to-buy; **reading / scene as a free bonus, never the pitch.**
 - **Why:** reading is commoditized to free (Seeing AI, Be My AI, Lookout) and OrCam — the $4,490 reading-hardware king — collapsed proving you can't charge for it. Mobility is the one job phones can't do, so it's the only durable hardware wedge.
 
@@ -67,8 +67,9 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 |----|----|----|----|
 | HO-000 | Example specimen (format demo) | 🗄️ example | not a real task |
 | HO-001 | Channel round-trip test (+ parts-arrival sync) | ✅ done | system verified; parts ordered, ETA ~2026-07-01 |
-| HO-002 | **S1 platform decision** — future-functions roadmap + eng feasibility/architecture | 🔧 ball in **CEO** | Jackie: modular engine from day 1 ✅ (~1–2 days, zero V1 risk); split-body **required**; free-form scene-desc needs **cloud** |
+| HO-002 | **S1 platform decision** — future-functions roadmap + eng feasibility/architecture | ✅ done (archived) | S1 拍板 🟢 platform + freemium + blind-core; Jackie: modular engine ✅, split-body required, scene-desc needs cloud |
 | HO-003 | **Roadmap sync** — multi-version product roadmap (`strategy/roadmap.md`), eng review | 📤 ball in **ENG** | Jackie sanity-checks form-factor/compute/battery/order; writes fixes in Thread, CEO backfills the file |
+| HO-004 | **S1 decided + medical opportunity** — notify Jackie of the 3 decisions + the caregiver/vitals expansion idea | 📤 ball in **ENG** | FYI / 前瞻；未来方向不影响 V1；医疗机会为未验证假设 |
 
 ## Next (the gate) — see `todo.md`
 Outdoor obstacle-detection demo on the board + 8–10 discovery calls. Everything waits on these.

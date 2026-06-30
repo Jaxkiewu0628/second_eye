@@ -23,5 +23,6 @@ We operate as CEO: strategy, market / competition, fundraising, operations, cust
 The one place complex, cross-domain tasks pass between us and Jackie, **with zero residual** — each handoff is a self-contained file; nothing critical lives only in chat.
 - **At session start:** check `../handoff/index.md`; read any `📤 OPEN` item directed `ENG → CEO` in full before acting.
 - **To send Jackie a task:** copy `../handoff/_TEMPLATE.md` → `HO-<NNN>-<slug>.md`, fill it self-contained (a fresh session must be able to act from it alone), set state `📤 OPEN`, register a row in `index.md`. Write the body in **中文** (his working language); keep the **TL;DR bilingual**.
+- **Crystal-clear titles:** every handoff's H1 is a short label; right under it an **`In a line / 一句话`** field gives a one-sentence summary (subject + ask). Use that same one-liner in `index.md`'s Summary column and the **handoff log in `status.md`** — so each numbered HO is obvious at a glance.
 - **Conversation stays in the file:** append replies to the handoff's `Thread` section (tagged `[CEO]`/`[ENG]`), update the state, and on close fill `Resolution` + move the row to Archive.
 - **Commit:** `../handoff/` is shared root-level — `git add ../handoff/…` when you send or update a handoff (this is the one place we write outside `business/`).

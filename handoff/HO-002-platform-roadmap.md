@@ -1,5 +1,7 @@
 # HO-002 — 平台能力路线图（未来软件功能）+ 架构留口 / platform capability roadmap
 
+**📌 In a line / 一句话:** 感知引擎是否从第一天就做模块化、让未来功能廉价可加？——S1 平台决策 + 工程可行性判断。/ Should the offline engine be modular from day 1 so future functions are cheap to add? — the S1 platform decision + a feasibility read.
+
 | Field / 字段 | Value / 值 |
 |---|---|
 | **From → To / 方向** | `CEO → ENG` |

@@ -15,6 +15,8 @@
 
 **Example / 示例:** see [`HO-000-EXAMPLE.md`](HO-000-EXAMPLE.md) — a filled specimen showing every section (not a live task). / 看 `HO-000-EXAMPLE.md`，一条填好的示例（非真实任务）。
 
+**Title / 标题约定:** each handoff's H1 is a short label, and directly under it an **`In a line / 一句话`** field gives a crystal-clear one-sentence summary (subject + ask). That one-liner fills the **Summary** column here and the handoff log in `business/status.md` — so each numbered HO is obvious at a glance, without opening it. / 每条交接的 H1 是简短标签，紧跟一行 **`In a line / 一句话`** 给出一句话清楚总结（主题 + 要做什么）；这句填进本表 **Summary** 列和 `business/status.md` 的 handoff log，一眼就懂。
+
 ## States / 状态
 | State | Meaning / 含义 |
 |---|---|
@@ -26,11 +28,11 @@
 | 🗄️ ARCHIVED | Closed & filed (row in Archive) / 关闭归档 |
 
 ## Active / 进行中
-| ID | Title / 标题 | Dir / 方向 | State / 状态 | Ball in court / 当前在谁 | Updated | File |
+| ID | Summary / 一句话 | Dir / 方向 | State / 状态 | Ball in court / 当前在谁 | Updated | File |
 |----|------|------|------|------|------|------|
-| HO-002 | 平台能力路线图 + 分体式架构必要性 | `CEO → ENG` | 📤 OPEN | **CEO** | 2026-07-01 | [HO-002](HO-002-platform-roadmap.md) |
+| HO-002 | 感知引擎是否从第一天模块化？S1 平台决策 + 工程可行性 / modular engine from day 1? S1 platform decision + feasibility | `CEO → ENG` | 📤 OPEN | **CEO** | 2026-07-01 | [HO-002](HO-002-platform-roadmap.md) |
 
 ## Archive / 归档
-| ID | Title / 标题 | Dir / 方向 | Closed | File |
+| ID | Summary / 一句话 | Dir / 方向 | Closed | File |
 |----|------|------|------|------|
-| HO-001 | 交接通道连通性测试 / channel round-trip test | `CEO → ENG` | 2026-07-01 | [HO-001](HO-001-channel-test.md) |
+| HO-001 | 通道往返测试 + 到货同步 / channel round-trip test + parts-arrival sync | `CEO → ENG` | 2026-07-01 | [HO-001](HO-001-channel-test.md) |

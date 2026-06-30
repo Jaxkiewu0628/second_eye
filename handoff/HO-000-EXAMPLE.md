@@ -8,6 +8,8 @@
 
 # HO-000 — EXAMPLE：户外避障 demo 的验收标准 / outdoor obstacle-detection pass-bar
 
+**📌 In a line / 一句话:** 【示例·非真实任务】交接填好后长什么样的格式样板。/ [Example, not a real task] a filled specimen showing how a handoff looks.
+
 | Field / 字段 | Value / 值 |
 |---|---|
 | **From → To / 方向** | `CEO → ENG` |

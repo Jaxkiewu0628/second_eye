@@ -60,5 +60,14 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 - **This folder** (`~/dev/second_eye/ceo/`) is our CEO work; it moves INTO the monorepo's `business/` folder.
 - The old `~/dev/second_eye/` scaffold (with the legacy `ar-sports-glasses` clone) is superseded by the monorepo's `engineering/` and can be retired after the move.
 
+## Handoff log (CEO ⇄ Jackie) — what each HO is about
+> HO titles are just numbers; this maps each to its subject so we know which to check when working a topic. Full channel + threads: `../handoff/index.md`.
+
+| HO | Subject / why it exists | State | Latest |
+|----|----|----|----|
+| HO-000 | Example specimen (format demo) | 🗄️ example | not a real task |
+| HO-001 | Channel round-trip test (+ parts-arrival sync) | ✅ done | system verified; parts ordered, ETA ~2026-07-01 |
+| HO-002 | **S1 platform decision** — future-functions roadmap + eng feasibility/architecture | 🔧 ball in **CEO** | Jackie: modular engine from day 1 ✅ (~1–2 days, zero V1 risk); split-body **required**; free-form scene-desc needs **cloud** |
+
 ## Next (the gate) — see `todo.md`
 Outdoor obstacle-detection demo on the board + 8–10 discovery calls. Everything waits on these.

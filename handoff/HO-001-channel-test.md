@@ -1,5 +1,7 @@
 # HO-001 — 交接通道连通性测试 / handoff channel round-trip test
 
+**📌 In a line / 一句话:** 测交接通道往返是否打通 + 顺手同步当前到货状态。/ Round-trip test of the handoff channel + sync current parts-arrival status.
+
 | Field / 字段 | Value / 值 |
 |---|---|
 | **From → To / 方向** | `CEO → ENG` |

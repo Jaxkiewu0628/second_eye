@@ -5,9 +5,12 @@ Claude session, must be able to act from this file alone. Link source docs, don'
 复制为  HO-<NNN>-<slug>.md（编号取 index.md 里下一个空号）。
 保持自包含（零残留）：无任何前置上下文的读者、全新的 Claude 会话，仅凭本文件即可执行。
 正文用接收方语言（CEO→ENG 中文 / ENG→CEO 英文）；TL;DR 中英双语。
+标题约定：H1 是简短标签；紧跟一行 **In a line / 一句话** 给出"主题 + 要做什么"的一句话清楚总结（这句会进 index.md 的 Summary 列和 status.md 的 handoff log —— 不开文件就知道是什么）。
 -->
 
-# HO-<NNN> — <Title / 标题>
+# HO-<NNN> — <short label / 简短标签>
+
+**📌 In a line / 一句话:** <one crystal-clear sentence — the subject + the ask, plain language. e.g. "CEO asks ENG whether the offline engine should be modular from day 1 (S1 decision). / CEO 问 ENG 离线引擎是否从第一天做模块化（S1 决策）。">
 
 | Field / 字段 | Value / 值 |
 |---|---|

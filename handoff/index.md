@@ -33,6 +33,7 @@
 | HO-004 | S1 已定板 + 前瞻医疗扩张机会（FYI 老哥）/ S1 decided + forward medical opportunity | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-004](HO-004-s1-decided-medical-opportunity.md) |
 | HO-005 | 赌注1 技术验证:眼镜重量+续航(要算式依据)/ Bet 1 tech proof: weight + battery | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-005](HO-005-bet1-weight-battery-proof.md) |
 | HO-006 | 赌注4 可行性:功能集(必须有/最好有)+自费价+BOM / Bet 4 feasibility | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-006](HO-006-bet4-feasibility-function-price.md) |
+| HO-007 | 数据飞轮怎么做(离线/隐私下采数据训练)/ data flywheel feasibility | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-007](HO-007-data-flywheel-feasibility.md) |
 ## Archive / 归档
 | ID | Summary / 一句话 | Dir / 方向 | Closed | File |
 |----|------|------|------|------|

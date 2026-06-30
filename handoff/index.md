@@ -31,7 +31,7 @@
 | ID | Summary / 一句话 | Dir / 方向 | State / 状态 | Ball in court / 当前在谁 | Updated | File |
 |----|------|------|------|------|------|------|
 | HO-002 | 感知引擎是否从第一天模块化？S1 平台决策 + 工程可行性 / modular engine from day 1? S1 platform decision + feasibility | `CEO → ENG` | 📤 OPEN | **CEO** | 2026-07-01 | [HO-002](HO-002-platform-roadmap.md) |
-| HO-003 | 多版本产品 roadmap 同步，请工程核维度（→ `business/strategy/roadmap.md`）/ multi-version roadmap sync + eng review | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-003](HO-003-roadmap-review.md) |
+| HO-003 | 多版本产品 roadmap 同步，请工程核维度（→ `business/strategy/roadmap.md`）/ multi-version roadmap sync + eng review | `CEO → ENG` | 📤 OPEN | **CEO** | 2026-07-01 | [HO-003](HO-003-roadmap-review.md) |
 
 ## Archive / 归档
 | ID | Summary / 一句话 | Dir / 方向 | Closed | File |

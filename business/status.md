@@ -56,6 +56,7 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 - `research/failure-graveyard-2026-06-30.md` — post-mortems + kill patterns → design/GTM rules
 - `research/competitive-data-2026-07.json` — **全球竞品原始数据(157 家,价格/离线/订阅/来源)— scan 的可复用底数据**
 - `research/competitive-pricing-2026-07.md` — **价位 × 功能对比表(从上面提取)**
+- `research/feature-matrix-2026-07.md` — **功能矩阵:低价组 vs 高价组(各产品有哪些功能)**
 - `research/deep-research-raw-2026-06-29.json` — raw research archive
 - `todo.md` — action items
 
@@ -75,6 +76,8 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 | HO-003 | **Roadmap sync** — multi-version product roadmap (`strategy/roadmap.md`), eng review | ✅ done (archived) | Jackie confirmed order/split-body/thermal; 3 fixes backfilled — **battery 13.7h→5–6h**, V2 wireless needs HW rev, OCR de-duped |
 | HO-004 | **S1 decided + medical opportunity** — notify Jackie of the 3 decisions + the caregiver/vitals expansion idea | 📤 ball in **ENG** | FYI / 前瞻；未来方向不影响 V1；医疗机会为未验证假设 |
 | HO-005 | **Bet 1 tech proof** — weight + battery, evidence-backed (power budget + per-part weight) | 📤 ball in **ENG** | close product-bet 1 needs proof, not a chat one-liner; paper calc OK, mark what awaits board test |
+| HO-006 | **Bet 4 feasibility** — must/nice functions + self-pay $549–699 + lists | 📤 ball in **ENG** | can ENG build it at BOM ≤~$250 / ~35g, avoidance approaching NOA? |
+| HO-007 | **Data flywheel feasibility** — collect/train without breaking offline+privacy (Bet 3 moat) | 📤 ball in **ENG** | our only potentially-permanent tech moat; how to spin it up + should V1 bake a data hook |
 
 ## Next (the gate) — see `todo.md`
 Outdoor obstacle-detection demo on the board + 8–10 discovery calls. Everything waits on these.

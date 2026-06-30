@@ -45,6 +45,7 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 - `strategy/market-research-2026-06-29.md` — research synthesis
 - `strategy/competitive-landscape.md` — full competitor teardown (pre-pivot)
 - `strategy/competitive-scan-2026-07.md` — **post-pivot global scan (157 competitors): honest moat verdict + S2 conclusions**
+- `strategy/product-bets.md` — **会改变产品走向的 6 个关键赌注 + 候选最优走向(待 CEO+Jackie 评估)**
 - `strategy/ip-status.md` — IP / ownership
 - `strategy/product-direction.md` — **Tier-1 strategic blockers (S1 ideology → S2 competition → S3 profit); the device-vs-platform decision**
 - `discovery/interview-guide.md` — discovery-call script (the gate), tagged to risk blocks

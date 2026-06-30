@@ -31,10 +31,9 @@
 | ID | Summary / 一句话 | Dir / 方向 | State / 状态 | Ball in court / 当前在谁 | Updated | File |
 |----|------|------|------|------|------|------|
 | HO-004 | S1 已定板 + 前瞻医疗扩张机会（FYI 老哥）/ S1 decided + forward medical opportunity | `CEO → ENG` | 📤 OPEN | **ENG** | 2026-07-01 | [HO-004](HO-004-s1-decided-medical-opportunity.md) |
-| HO-003 | 多版本产品 roadmap 同步，请工程核维度（→ `business/strategy/roadmap.md`）/ multi-version roadmap sync + eng review | `CEO → ENG` | 📤 OPEN | **CEO** | 2026-07-01 | [HO-003](HO-003-roadmap-review.md) |
-
 ## Archive / 归档
 | ID | Summary / 一句话 | Dir / 方向 | Closed | File |
 |----|------|------|------|------|
 | HO-001 | 通道往返测试 + 到货同步 / channel round-trip test + parts-arrival sync | `CEO → ENG` | 2026-07-01 | [HO-001](HO-001-channel-test.md) |
 | HO-002 | S1 平台决策（已拍板 🟢 平台+freemium+守视障核心）/ S1 platform decision (decided) | `CEO → ENG` | 2026-07-01 | [HO-002](HO-002-platform-roadmap.md) |
+| HO-003 | 多版本 roadmap 工程 review（已回填 3 处修正）/ roadmap eng review (3 fixes applied) | `CEO → ENG` | 2026-07-01 | [HO-003](HO-003-roadmap-review.md) |

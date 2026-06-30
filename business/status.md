@@ -68,7 +68,7 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 | HO-000 | Example specimen (format demo) | 🗄️ example | not a real task |
 | HO-001 | Channel round-trip test (+ parts-arrival sync) | ✅ done | system verified; parts ordered, ETA ~2026-07-01 |
 | HO-002 | **S1 platform decision** — future-functions roadmap + eng feasibility/architecture | ✅ done (archived) | S1 拍板 🟢 platform + freemium + blind-core; Jackie: modular engine ✅, split-body required, scene-desc needs cloud |
-| HO-003 | **Roadmap sync** — multi-version product roadmap (`strategy/roadmap.md`), eng review | 📤 ball in **ENG** | Jackie sanity-checks form-factor/compute/battery/order; writes fixes in Thread, CEO backfills the file |
+| HO-003 | **Roadmap sync** — multi-version product roadmap (`strategy/roadmap.md`), eng review | ✅ done (archived) | Jackie confirmed order/split-body/thermal; 3 fixes backfilled — **battery 13.7h→5–6h**, V2 wireless needs HW rev, OCR de-duped |
 | HO-004 | **S1 decided + medical opportunity** — notify Jackie of the 3 decisions + the caregiver/vitals expansion idea | 📤 ball in **ENG** | FYI / 前瞻；未来方向不影响 V1；医疗机会为未验证假设 |
 
 ## Next (the gate) — see `todo.md`

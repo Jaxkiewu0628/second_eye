@@ -1,0 +1,408 @@
+{
+ "synthesis": {
+  "subsegments": [
+   {
+    "name": "Construction / jobsite worker safety (struck-by, falls, danger-zone, lone-work)",
+    "blue_or_red": "lean-red",
+    "offline_now": "No — commercial layer is site/cloud-centric (Triax/Kwant/Newmetrix); egocentric on-device offline exists only in academic smart-helmet+YOLO prototypes",
+    "form_price": "Enterprise: UWB kits, smart hats $1,500–5,000, Kwant quote-only high-five-figure/site + per-worker SaaS; no cheap buy-once individual device",
+    "incumbents": "Triax Spot-r/Invixium, Kwant/OnTarget, Reactec R-Link, SensorZone/GKD, Newmetrix (Oracle), viAct, UWB cluster (ZoneSafe/Litum/Pozyx)",
+    "our_moat_gap": "Real but NARROW seam. Every incumbent is machine-POV / tag-relative / cloud-dashboard-for-safety-manager. Nobody ships worker-POV egocentric on-device-offline VISION that sees UN-tagged hazards + warns the wearer via haptic, zero site infra, individual price. Our $141/30g/offline/flywheel hits the common blind spot. HONEST WEAKNESS: on the most-painful struck-by case, UWB warns BOTH sides (driver+worker); pure wearable vision warns only the worker — a structural one-sided weakness. Fall/IMU is commodity — a me-too trap."
+   },
+   {
+    "name": "Factory / manufacturing machine safety (HRC, danger-zone, forklift-pedestrian, robot cells)",
+    "blue_or_red": "lean-red",
+    "offline_now": "Fixed guarding is local/certified; UWB tags offline; no worker-worn on-device-vision alerter ships",
+    "form_price": "Certified guarding = capital (SICK/Pilz/Banner/Keyence/Omron); UWB tags cheap+infra; LIPSafeguard fixed per-cell",
+    "incumbents": "SICK, Pilz, Banner, Keyence, Omron (certified stop), LIPS 3D virtual fence, ELOKON/UWB, Everguard",
+    "our_moat_gap": "Real but limited. Un-occupied angle = worker-worn on-device vision that RECOGNIZES the specific hazard (forklift/robot/press) with zero facility infra. Two hard walls keep it non-blue: (1) buyer's #1 requirement is a CERTIFIED function that STOPS the machine (ISO 13849/SIL) — we can only be advisory PPE, a smaller contested budget; (2) UWB's dust/smoke/no-line-of-sight edge is exactly where our camera fails. Wedge only on mobile/changing sites + temp labor + blind-spot hazards a tag can't characterize."
+   },
+   {
+    "name": "Mining / tunnel / underground safety (proximity detection, struck-by)",
+    "blue_or_red": "lean-red",
+    "offline_now": "Local RF proximity yes; no on-body autonomous vision perception ships",
+    "form_price": "Heavy industrial PDS retrofit of whole machine fleets; worker piece = dumb tag/cap-lamp locator",
+    "incumbents": "Matrix/IntelliZone (#1 NA), Strata/HazardAvert, Newtrax (Sandvik), Epiroc Titan, Wabtec, Torsa; viAct (2025 $7.3M) is the nearest edge-AI-helmet threat",
+    "our_moat_gap": "Real architectural seam (all incumbents instrument-the-world relative-positioning; worker wears a zero-perception dumb tag) and we natively hit 3 pains: offline (underground = mandatory ticket), low-visibility/dust blind spots (struck-by >40% of serious injuries), zero-capex single-worker deploy. BUT three hard walls: (a) ATEX/IECEx/MSHA intrinsic-safety cert we have never done — near life-or-death gate; (b) compliance procurement demands Level-9 machine-STOP, we only warn (Level 7); (c) vision can't sense gas. This is a V2/V3 migration direction, not a near-term validatable opportunity."
+   },
+   {
+    "name": "Warehouse / logistics forklift-pedestrian collision",
+    "blue_or_red": "lean-red",
+    "offline_now": "Vehicle-mounted CV = edge box on the truck; UWB tags offline+infra; no worker-worn autonomous vision",
+    "form_price": "Commodity vehicle AI cameras collapsing to ~$699/vehicle; UWB RTLS enterprise; no worker-worn vision unit",
+    "incumbents": "ELOKON, Proxicam, Speedshield, Powerfleet, ForwardX (markets 'no wearables'); commodity: STONKAM/Toptree/KOCCHI'S; UWB: Litum/Pozyx/Ubiquicom",
+    "our_moat_gap": "Seam is the worker-worn autonomous vision sensor (infra-zero personal safety) and it is genuinely unoccupied — but this is the WEAKEST fit. Indoor warehouses are bright, flat, Wi-Fi-covered, so our offline/low-power edge neutralizes; forklift threats come from behind/side where a forward head-cam is blind; RFQs increasingly REQUIRE vehicle auto-STOP (we can't brake the truck); camera-on-worker triggers surveillance/union pushback a tag doesn't; $141 BOM edge evaporates vs $699 Shenzhen commodity. Pass on fixed warehouse; only probe infra-less yards/ports/3PL surge/lone-roaming as a complementary layer."
+   },
+   {
+    "name": "Oil / gas / chemical / power / utilities worker safety",
+    "blue_or_red": "lean-red",
+    "offline_now": "No — connected gas + lone-worker telemetry is cloud/subscription-first by design (Blackline)",
+    "form_price": "Device+plan ~$33–38/mo (Blackline); certified IS cameras $5,000–6,500; enterprise EHS SaaS",
+    "incumbents": "Blackline Safety (leader, went private Apr 2026 $850M), Honeywell, MSA, Industrial Scientific/Fortive, Dräger, Guardhat/Aatmunn, Spacebands",
+    "our_moat_gap": "One unclaimed angle — infra-free on-device-VISION fall/edge/collision warning (perception here is chemical+inertial, never visual; proximity is tag/beacon infra). Blocker is intrinsic-safety CERT + COST, not competition: certified IS cameras are $5–6.5k, obliterating our cost moat in the classified Ex core (a trap). Seam only workable in NON-Ex slices — utility field/line, water/wastewater, solar/wind O&M, construction-adjacent yards — where a body-cam needs no Zone-1 cert. This is a B2B EHS enterprise sale, a different GTM/company from our blind-user grants/VA/direct path."
+   }
+  ],
+  "top_opportunities": [
+   {
+    "segment": "Non-Ex outdoor field / O&M lone-and-roaming work (utility line/field, water/wastewater, solar & wind O&M, construction laydown yards, road-work zones)",
+    "why": "This is where ALL FOUR of our properties hold at once and no incumbent reaches: UWB/RTLS is uneconomic on transient equipment and mobile crews (needs anchors on every vehicle+zone), fixed CV can't cover roaming/occluded/off-grid workers, and connected-safety pucks (Blackline) are cloud-by-design so they die where connectivity dies. No intrinsic-safety wall (non-Ex), so our $141 cost moat survives. Fall-from-height + untagged-vehicle proximity are the exact jobs our V1 stack already does (downward-ToF drop-off detection was pulled into V1).",
+    "moat_angle": "Infrastructure-ZERO egocentric on-device-offline vision: works the moment one worker clips it on, anywhere, no beacons/gateways/cloud, sees UN-tagged hazards (edges, holes, untagged vehicles, swinging loads) a radio tag is structurally blind to. Privacy-safe (no cloud, no upload, alerts only the wearer) directly answers the 46%/59% worker resistance to biometrics/tracking that every cloud incumbent trips on. Data flywheel on real worker-POV near-miss footage compounds and tag-based systems structurally cannot produce it."
+   },
+   {
+    "segment": "Small / mid contractors and temp / contract labor priced out of enterprise safety platforms",
+    "why": "Cost is the repeatedly-cited #1 adoption barrier for small contractors; the entire category hides price behind enterprise SaaS / insurance-bundling / multi-year leases with no simple affordable buy-once individual device. Our BOM enables a price point the category structurally does not offer, and single-worker zero-capex deploy fits crews too small/transient for Kwant-class rollouts.",
+    "moat_angle": "Individual-priced, buy-once, per-worker personal protection with no per-seat subscription and no site instrumentation — an economic segment the incumbents' capital+SaaS model cannot serve."
+   }
+  ],
+  "red_ocean_avoid": "DO NOT touch, in priority order: (1) Fall/man-down detection via IMU — commodity, cheap, owned by Blackline/Kwant/Spot-r; pure me-too, violates iron rule 1. (2) UWB/RFID vehicle-pedestrian PROXIMITY as a category — owned by ELOKON/Litum/Pozyx/ZoneSafe/Reactec; they warn BOTH sides and see through dust/smoke/no-line-of-sight where our camera fails; do not go head-to-head. (3) Certified machine-guarding / machine-STOP (ISO 13849/SIL, Level-9 PDS) — SICK/Pilz/Keyence/Omron/Matrix/Newtrax; we legally cannot be the certified stop function. (4) Connected gas-detection + lone-worker telemetry — Blackline ($850M take-private) / Honeywell / MSA / Dräger; a me-too cloud safety puck is suicide. (5) Cloud AI-vision safety PLATFORMS on fixed CCTV for PPE/compliance dashboards — Intenseye ($64M), Protex ($36M), Voxel, Newmetrix/Oracle. (6) Fixed high-throughput warehouse forklift CV — ELOKON/Proxicam plus $699 Shenzhen commodity that erases our cost edge. (7) The classified Ex core of oil/gas/chem/mining — intrinsic-safety cert wall ($5–6.5k IS cameras) evaporates our cost moat exactly where the hazard is.",
+  "our_capability_fit": "Our four-legged playbook (cheap ~$141 BOM / ~30g wearable / on-device OFFLINE camera+ToF+YOLO / data flywheel) fits best precisely where the environment is unstructured, off-grid, mobile, and un-instrumented — the common blind spot of the entire field. Every incumbent is one of: (A) fixed/machine-POV CV bolted to ceiling or vehicle, (B) a dumb radio tag that only senses PRE-TAGGED objects and is blind to untagged hazards, or (C) a cloud/telemetry puck that streams to a supervisor. Our unique standing capability is the ONLY one that is worker-POV + sees un-instrumented hazards + needs zero site setup + alerts the wearer (not a dashboard) + runs with no connectivity. Strongest concrete jobs: fall-from-height / drop-off / edge detection (downward ToF, already in V1) and untagged-vehicle/equipment proximity in yards. Honest limits: (1) on-device egocentric CV is NOT a moat by itself (Chooch/Guardhat/viAct do edge inference; academic YOLO-on-helmet is everywhere) — the moat is the cheap+offline+untagged-vision+individual-price COMBINATION plus the flywheel and execution/reliability; (2) camera degrades in dust/smoke/dark where RF wins — position as a complementary layer, not a replacement.",
+  "b2b_barriers": "HIGH and structurally different from our blind-user path. (1) Certification: OSHA/CE baseline is manageable, but any Ex environment (oil/gas/mining/chem) demands ATEX/IECEx/MSHA intrinsic-safety — Zone-1 is 40–60% costlier, months of scarce third-party testing, and certified IS cameras run $5–6.5k, wiping out our cost moat; this both gates and moats. Strategy: enter only NON-Ex scenes to avoid/defer it. (2) Procurement: enterprise B2B cycle 6–12 months, 5–10 decision-makers, +4–8 weeks safety/security review, 9–18 month platform deployments — hostile to a two-person startup. (3) Payer: the buyer is the EHS manager / GC / insurer, NOT the worker; budget is truly unlocked by workers'-comp ROI (early vendor data cites 50–64% injury-rate drop, 58% claims-cost drop, 250%+ ROI — but these are vendor/manufacturing figures, not independent long-term construction studies, so they need our own pilot to substantiate). (4) Adoption/privacy: 46% of workers resist biometrics, 59% resist location tracking, unions constrain any monitoring — a wall for cloud incumbents that our offline/alert-only/no-upload architecture turns into an ADVANTAGE. (5) Legal ceiling: in machine/mine contexts we can only be advisory PPE, never the certified stop.",
+  "synergy_with_blind": "STRONG — same engine, different label. The core is identical: camera + ToF depth + on-device YOLO + bone-conduction/haptic 'hazard ahead,' fully offline, ~$141/~30g, plus the data-flywheel loop. Blind mobility already validates and de-risks the hard physics (outdoor obstacle/curb/drop-off detection on a thin frame + ToF), and the drop-off/edge detection just pulled into V1 is the same primitive worker fall-from-height needs. A worker build reuses ~90% of the perception stack — the deltas are the hazard class model (forklift/edge/machine vs curb/pole/branch), ruggedization, and a different alert taxonomy. The genuine DIVERGENCE is business, not tech: blind = individual buyer + grants/VA/voc-rehab reimbursement + direct sales; worker = enterprise EHS/insurer buyer + long B2B procurement + certification. So one engine can serve both, but they are effectively two companies on GTM, and splitting a two-person team across both would dilute the funded core. Best used as an optionality/V2+ migration story, not a now-fork.",
+  "market_size_note": "Big and double-digit growing [MODERATE credibility — analyst reports bundle disparate categories, methodology opaque, treat as ranges not facts]. Industrial wearables ~$8.2B (2025) → ~$51.5B (2036), ~16.5% CAGR (alt cut $17.2B→$56.2B, ~12.6%). Wearable workplace-safety sub-segment ~$4.0B (2024), ~15.8% CAGR. Construction wearables ~$4.6B (2025) → ~$7.3–7.55B (2030), ~10.7% CAGR. Adjacent: lone-worker safety ~$10.1B (2023)→~$17B (2031), ~15%; EHS software ~$7.9B (2024)→~$11.5B (2029). Demand is real (US 2024: 1,034 construction deaths, falls 389 = #1; ~84 forklift deaths, ~36% pedestrians). Caveat: our defensible SLICE — infra-free personal external-hazard vision in non-Ex mobile/lone work — is a narrow, un-quantified sub-fraction of these totals, NOT the whole TAM; do not headline the $8B/$51B figures as our addressable market.",
+  "feasibility_verdict": "CONDITIONAL (lean toward NOT now for the core team). The technology transfers cleanly and there IS a genuine, adversarially-confirmed seam — infrastructure-free, egocentric, on-device-offline vision that sees UN-tagged hazards and warns the worker, at an individual price the category structurally doesn't offer — that no shipped product occupies. BUT it is a NARROW combination seam inside a mature, well-capitalized RED ocean, not open blue water, and three facts cap it: (1) on our most-painful case (struck-by), pure wearable vision only warns one side while UWB warns both — a structural weakness; (2) the buyer/GTM (enterprise EHS/insurer, 6–12mo procurement, workers'-comp ROI, certification) is a DIFFERENT company from our funded blind-user grants/VA/direct path; (3) the deepest-pain verticals (mining, Ex oil/gas) are gated by intrinsic-safety cert we've never done. Feasible technically; feasibility as a business for a two-person team RIGHT NOW is the real constraint.",
+  "recommendation": "Do NOT pivot or fork the team into worker-safety now — protect the funded blind-mobility core (that is where the payer path, physics de-risking, and current momentum live). Treat worker-safety as VALIDATED OPTIONALITY / a V2+ migration story for the fundraise narrative, not a second product line. Concretely: (1) Keep architecting the engine to be hazard-class-agnostic (blind curbs and worker edges are the same primitive) so a worker SKU is a model+ruggedization delta, not a rebuild — the V1 downward-ToF drop-off work already does double duty. (2) If — and only if — you probe worker-safety, run ONE cheap discovery probe into the single best-fit wedge: infrastructure-free personal fall/edge/vehicle-proximity vision for NON-Ex outdoor lone/roaming field & O&M work (utility line, water/wastewater, solar/wind O&M, laydown yards, roadwork) sold as a COMPLEMENTARY worker-worn layer, and pitch it on insurance/workers'-comp ROI + privacy-safe (offline, alert-only, no tracking) — NOT on hardware specs. (3) Hard NO to: fall/IMU me-too, UWB proximity, certified machine-stop, gas/lone-worker pucks, fixed-CCTV CV platforms, warehouse-fixed forklift CV, and the Ex core. Gating risks to resolve before treating this as more than optionality: the one-sided struck-by weakness, who actually pays, and whether privacy-offline is enough of a wedge to justify a second GTM."
+ },
+ "scenes": [
+  {
+   "scene": "建筑/工地工人安全预警(避免被机械撞、高处坠落、误入危险区、孤立作业)。这是一个 ~$5B 且在增长的成熟市场(construction wearable tech,2025 ~$5B → 2030 ~$7.3B),玩家密集、资金充足、且大量学术原型。整体是红海,但内部有一个结构性缝隙(见 our_gap)。现有方案分三大阵营:(A) 固定/车载 AI 摄像头(machine-POV,保护\"机器周围\"),(B) RFID/UWB 邻近标签(tag<->车,双向报警),(C) 可穿戴生命体征/坠落/lone-worker 设备。几乎所有商用方案都以\"车/工地为中心 + 云平台订阅\"为架构,真正\"以工人第一视角、端侧离线、直接预警佩戴者\"的产品化东西基本只停留在论文原型(smart helmet + ESP32-CAM + YOLO)。",
+   "blue_or_red": "lean-red",
+   "our_gap": "有真缝,但很窄、需要重新定位。现有商用方案的共同盲区正好是我们的独特角度的三条腿:(1) 视角错位——A/B 阵营保护的是'机器/工地周围',是 machine-POV 或 tag 相对距离;几乎没有商用品做'工人第一视角、理解工人自己前方/周围环境'的即时避险(egocentric vision)。这恰是 Second Eye 的原生能力(camera+ToF+YOLO 看'我'前方有什么)。(2) 离线/端侧几乎无人真正做——Triax/Kwant/Blackline/Newmetrix 的核心价值都是'把数据/警报送上云平台或指挥中心',联网是卖点不是可省项;而工地恰恰常在弱网/地下/偏远。'端侧离线、不联网也能救命'是一个未被占的定位,尤其对隧道/地下/偏远/断网场景。(3) 价格/买家错位——现有方案是企业级(Kwant 单站起步 $50k、智能头盔 $1,500–5,000/顶、全是 per-worker 订阅),把大量小/中承包商挡在门外(市场公认 cost 是小承包商第一障碍);我们 BOM ~$141、~30g、无强制订阅,天然打'买得起的个人级防护'。数据飞轮同样是缝——现有玩家的数据回流是'给安全经理看的合规仪表盘',没人把真实使用回流去持续改进'佩戴者即时避险模型'。诚实的红线:(a) 邻近'被机械撞'这个最痛的场景,UWB/RFID 双向报警(能同时警告司机+工人)在'司机侧'比纯视觉更可靠,我们纯 wearable 视觉只警告工人一侧,是弱点;(b) 坠落检测(IMU)已是红海且便宜到白菜价,不该做 me-too;(c) 学术原型多=需求真但也=商业化有坑(可靠性/误报/佩戴意愿/谁买单)。所以缝在'egocentric + 离线 + 便宜可穿戴 + 数据飞轮'这个组合,最可能的真空细分是:弱网/地下/隧道/偏远的高危个人,或把'工人看自己前方危险区/坠落边缘/接近的机械'做成一个便宜的个人级第一视角预警——而不是去和 UWB proximity 或云端安全管理平台正面 me-too。"
+  },
+  {
+   "scene": "Factory / manufacturing machine safety — human-machine collaboration, danger-zone intrusion, forklift-pedestrian collision, press/robot cells.",
+   "blue_or_red": "lean-red",
+   "our_gap": "Real but narrow. No shipping product is a worker-worn, first-person camera + on-device offline vision that RECOGNIZES the specific hazard (forklift, robot arm, press, moving edge) and warns the wearer directly with zero facility infrastructure. Every incumbent is either (a) fixed-mount (light curtains, AI virtual fences) or (b) a dumb radio tag needing antennas on every vehicle/zone (UWB/RFID), or (c) a smart helmet whose camera only streams to a supervisor. Our '$141 BOM, ~30g, on-device YOLO+ToF, haptic, offline, data-flywheel' hits a genuinely un-occupied angle: a self-contained personal hazard-perception wearable that works the moment you put it on, in dust/dark, no site retrofit. BUT the moat is limited by two hard facts: (1) the buyer's #1 requirement in this vertical is a CERTIFIED safety function that STOPS the machine (ISO 13849 / SIL) — a wearer-alert-only device is legally 'advisory PPE,' a complementary layer, and cannot replace guarding, so it competes for a smaller 'extra layer' budget already held by cheap UWB tags; (2) UWB's dust/smoke/no-line-of-sight advantage is real and our camera degrades exactly where these plants are worst. Best wedge = places fixed guarding + UWB can't reach: mobile/changing worksites, temp/contract labor, and 'blind-spot' hazards a tag can't characterize — sold as an advisory personal layer, explicitly NOT as machine guarding."
+  },
+  {
+   "scene": "矿山/隧道/地下安全预警 — 成熟红海市场,但\"打法\"这一层有真缝。这是工业安全里监管驱动最强、玩家最密的赛道之一:美国 MSHA 从 2015 年起强制地下煤矿的连续采煤机装 proximity detection(2018 全面落地),全球有 EMESRT/ISO 21815 的 Level 7-9 分级框架推动。至少 5-7 家硬玩家占着:Matrix/IntelliZone(北美煤矿 PDS 第一)、Strata/HazardAvert、Newtrax(被 Sandvik 收,Glencore 在推)、Epiroc Titan、Wabtec、Mine Safe Global、Torsa。但关键洞察:这些全是\"给世界装传感器\"的相对定位系统 —— 工人身上戴的只是一个哑标签(RFID/UWB/EM 场 tag 或 cap-lamp locator),自己没有任何感知,只知道\"我靠近了一台被改装过的机器\"。它们不感知世界,它们要求世界被仪表化。Second Eye 是反过来的:相机 + ToF + YOLO 长在身上,直接\"看见\"危险(机械、危险区边缘、坠落沿),离线、不需要给机器装任何东西、不需要锚点。这个\"以人为中心的机载视觉感知\"角度在矿山里基本没被占。硬约束:①地下有致命的防爆/本安(intrinsic safety, IECEx/MSHA ATEX)认证门槛 —— 这是 Second Eye 完全没做过的重资质,是最大拦路虎;②监管强制的是\"机器要能停\"(Level 9 intervention),纯预警(Level 7)满足不了合规采购,而 Second Eye 停不了机器;③瓦斯/气体这类化学危险,视觉根本测不了。",
+   "blue_or_red": "lean-red",
+   "our_gap": "有一条真缝,但很窄,且被两道硬墙夹住。缝在哪:全部在售玩家都是'给世界装传感器'的相对定位(标签+机载控制器/锚点/beacon),工人穿戴件是零感知的哑接收端——只在靠近被改装的机器时才有用。没有一个是'机载自主视觉感知':相机+ToF直接看见危险(机械逼近、危险区/坠落沿、低可见度下的障碍),离线、不需给任何机器/环境装东西、单兵即插即用。Second Eye 的'便宜($141 BOM)+30g可穿戴(可改安全帽/护目镜)+端侧离线视觉感知+数据飞轮'这套,在矿山语境下架构上是新的,且天然击中三个痛点:①无网环境(地下离线是刚需,不是卖点是门票);②低可见度/盲区(粉尘、拐角、遮挡——正是struck-by致死主因,占重伤>40%);③部署零仪表化(不用改机器,单人即可上,capex几乎为零,和动辄改整队机器的PDS形成成本降维)。数据飞轮在这里也成立——真实井下视频回流改进模型。但缝很窄的原因(诚实):(1) 防爆/本安认证是拦路虎——地下煤矿设备要IECEx/MSHA/ATEX本安认证,这是重资质、长周期、高成本,Second Eye从零开始,这一条几乎决定生死;(2) 监管+采购逻辑要'能停机器'(EMESRT Level 9自动干预),纯预警(Level 7)满足不了合规硬采购,而Second Eye只能预警、停不了机器——所以在'合规强制'的连续采煤机场景正面打不过Newtrax/Matrix;(3) 视觉测不了瓦斯/气体这类化学致命危险,Blackline那条线动不了。结论:不要去正面碰'机器合规PDS'(那是Level 9玩家的红海);真缝在监管强制覆盖不到的人身场景——非煤的金属/非金属矿、隧道/地下施工、探矿/勘查、以及PDS装不了的小型/混编/承包商作业中,给单个工人一个便宜、离线、即戴即用的'第二只眼睛'做低可见度下的机械逼近+坠落沿+危险区预警。把它当'个人可穿戴的struck-by/坠落最后一道防线',而不是'机器停车系统'。即便如此,认证墙意味着这更可能是V2/V3的迁移方向,而非能快速验证的近场机会。"
+  },
+  {
+   "scene": "Warehouse / logistics forklift-pedestrian (and AGV-pedestrian) collision safety in loading/unloading and mixed-traffic aisles. Real pain: US National Safety Council reports ~84 forklift-related deaths in 2024, ~36% involving pedestrians; forklift-pedestrian struck-by is a top OSHA-cited warehouse hazard. Strong regulatory + insurance pull, so buyers exist and budgets exist. This is a crowded, actively-marketed 2024-2026 category with a dedicated trade press (Riodatos publishes annual \"22/25 pedestrian-detection systems\" directories) — a signal the space is saturated, not empty.",
+   "blue_or_red": "lean-red",
+   "our_gap": "There IS a narrow but real architectural seam, and it is the ONLY defensible one here. Every incumbent falls into two buckets: (A) the DETECTOR lives on the vehicle or ceiling (AI camera / ToF / LiDAR) and the worker is a passive detected object; or (B) the worker wears a DUMB RADIO TAG (UWB/BLE/RFID) that is just a beacon/receiver and requires matching units on every vehicle + anchor infrastructure. Nobody ships Second Eye's exact combination: an autonomous, worker-worn, on-device VISION sensor (camera + ToF + YOLO) where the worker's OWN device sees the approaching forklift and warns via bone-conduction/haptic, with ZERO vehicle units and ZERO facility infrastructure. That yields three concrete un-occupied angles: (1) Infrastructure-zero personal safety — protects a worker the moment they clip it on, even in a yard/3rd-party site/temp job where no beacons or vehicle kits exist (UWB/RTLS can't, because it needs the counterpart hardware); (2) Protects against ANY hazard the camera sees (untagged visitors, non-fleet vehicles, a swinging load, a trailer, an edge/drop-off), not just fleet vehicles that happen to carry a beacon; (3) The data flywheel (real worker-POV footage of near-misses -> better model) is something tag-based systems structurally cannot produce and vehicle-cameras only capture from the vehicle's viewpoint. Modjoul/Spacebands prove the market already accepts worker-worn hardware — but their wearable is haptic/tag, not a sensor, which is exactly the gap."
+  },
+  {
+   "scene": "Oil/gas/chemical/power/utilities worker safety is a mature, consolidated, SUBSCRIPTION-FIRST market dominated by connected gas-detection + lone-worker telemetry. The wearable's job today is (1) sniff gas (H2S/CO/O2/LEL via electrochemical sensors) and (2) call for help on a fall/no-motion (via accelerometer/IMU). It is a connectivity + monitoring business, NOT an on-device perception business. Market ~$10B->$17B by 2031 (~15% CAGR); connected-worker installed base heading to ~17.5M devices / ~$2.8B rev by 2034. Blackline Safety (the leader) just went PRIVATE April 2026 (Francisco Partners, up to $850M; ARR ~$90.5M, 40% rev CAGR) — a proven, well-capitalized category, the opposite of greenfield. Two structural facts define any seam: (a) perception here is chemical + inertial, NOT visual — nobody ships an on-body camera that sees an UNTAGGED physical hazard; (b) collision/proximity avoidance is INFRASTRUCTURE-based (worker tag + machine beacon / RTLS / UWB / radar), so it can't see a hazard that isn't tagged.",
+   "blue_or_red": "lean-red",
+   "our_gap": "covered in the our_gap field above"
+  },
+  {
+   "scene": "Wearable worker-safety devices — overview across hard-hat / goggles / vest / belt / badge / wristband forms. This is a crowded but structurally split space: (A) ergonomic/IMU wearables that watch YOUR OWN posture (belt clips, no camera); (B) environmental-hazard camera/IoT systems that see EXTERNAL hazards but are site-installed, cloud-centric and enterprise-priced; (C) UWB/RFID proximity tags that are cheap and offline but only detect other tagged vehicles/zones (blind to un-instrumented hazards). Pricing is universally hidden behind enterprise SaaS, insurance-bundling, or multi-year leases — there is no simple affordable buy-once individual device in the category. Notable signal: Guardhat, the flagship camera-smart-hardhat, EXITED HARDWARE in Jan 2024 (rebranded Aatmunn, now software-only) — expensive smart-hat hardware failed as a business.",
+   "blue_or_red": "lean-blue",
+   "our_gap": "Yes — a narrow but defensible seam. Every incumbent misses our exact combination: an AFFORDABLE ($100-300-class, ~$141 BOM), SELF-CONTAINED, CAMERA+ToF vision wearable that sees UN-INSTRUMENTED external hazards (machinery proximity, danger-zone edges, drop-offs, collisions, falls) with instant ON-BODY haptic/bone-conduction warning, NO cloud, NO site infrastructure, NO per-seat SaaS, plus a data flywheel. Three walls define the seam: (1) the vision players (viAct, ex-Guardhat) that CAN see external hazards are cloud/enterprise/site-scale and expensive; (2) the cheap-offline players (UWB tags) require anchors on every vehicle/zone and are blind to un-tagged hazards; (3) the ergonomic players (Kinetic/StrongArm/Soter/Modjoul/WearHealth) only watch your own body, never the environment. Our wedge = 'sees un-instrumented hazards with zero site setup, deployable by one worker on day one.' The pricing model is also a gap: the whole field hides price behind enterprise SaaS / insurance-bundling / 4-yr leases — there is no simple affordable buy-once individual device, and our BOM enables a price point the category structurally doesn't offer. On-device-offline WITH a camera also resolves the privacy tension the others split on (viAct built on-prem edge for it; WearHealth markets 'no cameras' to dodge it)."
+  },
+  {
+   "scene": "AI-vision worker safety (camera-based hazard/PPE/proximity detection) — segment of the industrial EHS market.",
+   "blue_or_red": "lean-red",
+   "our_gap": "Real but NARROW seam. The camera-based worker-safety field splits into three camps that each leave our exact angle open: (1) Fixed-camera CV (Intenseye/Voxel/Protex/Chooch/ForwardX) — real vision but bolted to the CEILING or the FORKLIFT, needs CCTV + edge box + cloud + enterprise budget; nothing rides on the individual worker, useless off-grid. (2) RF/UWB proximity tags (Everguard's wearable, ELOKON ELOshield, HazardAvert) — cheap + worn + offline, but BLIND: they only sense pre-TAGGED vehicles/zones, so every hazard must be instrumented and anchors installed; they cannot see an untagged obstacle, edge, hole, or unexpected moving danger. (3) Smart-helmet-with-camera (Guardhat) — camera actually on the worker + edge, but it's a $1,500–5,000 cloud-tethered comms/RTLS platform, comms-first not alert-first. NOBODY ships the combination we own: a CHEAP (~$141 BOM), LIGHT (~30g), VISION-based (camera+ToF+YOLO), FULLY-OFFLINE, personal egocentric hazard alerter that turns the worker's own head into the sensor — zero infrastructure, zero tags-on-everything, zero connectivity, bone-conduction/haptic 'danger ahead.' Defensible wedge = where fixed cameras can't reach and RF tags go blind: LONE / REMOTE / off-grid workers, dynamic-untagged-hazard environments (unmarked drop-offs, temporary obstacles, moving equipment nobody tagged), and cost-sensitive buyers priced out of $45–60k/site CCTV deployments. Caveats: on-device CV itself is NOT a moat (Chooch/Guardhat already do edge inference); the moat is the cheap+egocentric+offline+untagged-vision COMBINATION plus the data flywheel — and the pitch must be aimed squarely at the untagged/off-grid case, because for generic instrumented-factory PPE/proximity the incumbents (fixed CV + RF tags) already win."
+  },
+  {
+   "scene": "全球工人安全 / EHS / 工业可穿戴安全市场 —— 从\"市场规模 + B2B 采购门槛\"角度评估 Second Eye(便宜+可穿戴+端侧离线个人预警+数据飞轮)能否切入。市场大且快:工业可穿戴 ~$8.2B(2025)→ ~$51.5B(2036),CAGR 16.5%;其中\"可穿戴职场安全\"子赛道 ~$40亿(2024),CAGR 15.8%;建筑可穿戴 ~$46亿(2025,CAGR ~10.7%)。买家=EHS/安全经理 + 保险公司(工伤险 workers-comp 是真正的付费杠杆:早期数据显示伤害率降 50-64%、工伤索赔成本降 58%、ROI 250%+)。但这是一个 B2B 重门槛市场:企业销售周期 6-12 个月、5-10 个决策人、安全审查再加 4-8 周;危险场景(油气/矿/化工)要 ATEX/IECEx 防爆认证(Zone 1 比 Zone 2 贵 40-60%、数月第三方测试、全球合格实验室少 —— 这本身是护城河也是拦路虎);工人隐私抵触极强(46% 不愿戴生物识别、59% 拒绝定位追踪)。核心洞察:防撞/接近预警赛道几乎全是 UWB/RTLS 基础设施派(要给机器贴标签+改造场地),连线安全龙头几乎全是云+订阅;\"工人自己头戴摄像头、离线、无需场地改造、只提醒本人\"这个角度基本没被产品化占据(2025 学术界 EgoSafe 恰好用工人头盔 egocentric 摄像头检测路径绊倒物 —— 与我们形态/方法完全一样,但还没商业化)。",
+   "blue_or_red": "lean-red",
+   "our_gap": "有一条真缝,但被两堵墙夹着。缝:防撞/接近预警赛道几乎全是 UWB/RTLS 基础设施派(Rombit/Pozyx/Claitec/Leica/Trio —— 必须给机器贴标签+改造场地,资本开支高、覆盖固定区域),连线安全龙头(Blackline/Guardhat)几乎全是云+订阅;而'工人自己头戴便宜摄像头、端侧离线、零场地改造、认路面/危险物/坠落、只用骨传导/触觉提醒本人'这个角度基本没被产品化占据。学术界 EgoSafe(2025,头盔 egocentric 摄像头检测绊倒物)恰好验证了形态与方法成立却还没商用 —— 这是我们最独特的落点。我们的独特组合(便宜 BOM ~$141 + 30g 可改安全帽/护目镜/徽章 + 端侧离线实时 YOLO+ToF + 数据飞轮)刚好击中三个未被占的点:(1)零基础设施 —— 不像 UWB 要满场贴标签,单兵即用,适合流动作业/临时工地/中小承包商这个被 RTLS 高部署成本挡在门外的长尾;(2)离线+仅本人预警 —— 天然规避隐私墙(不上传视频、不做管理端追踪),可作为区别于 Guardhat/云方案的核心卖点,直接回应 46%/59% 工人抵触;(3)便宜到能人手一台 —— 现有方案要么车级要么系统级,单兵成本高。数据飞轮在这里也成立(真实工地危险场景→改进模型→别人难追)。但两堵墙必须先算清:① 认证墙 —— 油气/矿/化工要 ATEX/IECEx 防爆(Zone 1 贵 40-60%、数月、实验室稀缺),这既是门槛也是护城河;建议先切不需要防爆的场景(仓储叉车-行人、一般建筑/物流/公用事业、公路养护工区)以避开或推迟认证。② 采购墙 —— B2B 销售 6-12 个月、5-10 决策人、安全审查再加数周;真正解锁预算的是保险(workers-comp 保费/索赔 ROI),所以 GTM 必须捆保险公司/EHS 经理的 ROI 叙事,而不是卖硬件参数。诚实结论:大多数邻近赛道已有人做,但没人做'便宜+离线+零基础设施+仅本人预警的头戴视觉个人防撞',这条缝真实存在,窗口靠'零基础设施+隐私安全+保险 ROI'三点组合守。"
+  }
+ ],
+ "players_verified": [
+  {
+   "name": "Triax Spot-r (Triax Technologies, now Invixium)",
+   "verified": "partly",
+   "offline": "no",
+   "does_personal_realtime_warning": "no",
+   "form": "Belt-clip wearable (Spot-r Clip) + REQUIRED on-site proprietary mesh network (belt units -> relay boosters/gateway nodes -> cloud). Add-ons: EquipTag (tags machinery), EvacTag (evac siren), turnstiles/Access. The wearable is inert without the installed network.",
+   "price": "Not public. Enterprise model = hardware (per tag) + installation fee + per-tag MONTHLY subscription (mesh network + cloud software/maintenance); fee scales with site size. Quote-only.",
+   "funding": "~$17.9M raised over 4 rounds (latest a Series A, 2023-11-22). ACQUIRED by Invixium (Toronto biometric/access-control firm) on 2024-07-17, terms undisclosed. Now Invixium's industrial RTLS/safety line; Invixium pairs it with fixed AI-enabled cameras (not wearable, not worker-carried).",
+   "leaves_gap_for_us": "YES — wide open on all three of our axes. (1) OFFLINE: Spot-r is fundamentally cloud + requires an installed site-wide mesh network; it cannot work as a standalone offline personal device. Our on-device YOLO+ToF, zero-infra, works anywhere (lone/remote workers, no gateway). (2) PERSONAL REAL-TIME PREVENTION: Spot-r only detects the wearer's OWN fall after it happens (accelerometer/gyro/altimeter) + SOS button + site-wide evac broadcast; it does NOT sense the environment and does NOT warn a worker BEFORE a collision/machinery/danger-zone/fall hazard. Second Eye's camera+ToF+bone-conduction gives proactive 'danger ahead' warning to the individual — a different job (prevention vs. post-incident response + supervisor analytics). (3) CHEAP/WEARABLE: they're an enterprise CapEx+subscription SaaS platform (per-tag monthly fee + install) built for GCs/insurers/productivity dashboards; no cheap self-contained unit. Spot-r is a 'connected-jobsite visibility/RTLS' play (arena C+B) — it competes with us on NOTHING at the individual-prevention layer. NOTE for status: this is a category-adjacent incumbent, not a head-on rival; and the earlier one-liner on it was stale — it missed the 2024 Invixium acquisition.",
+   "sources": [
+    "https://www.triaxtec.com/how-it-works/",
+    "https://www.triaxtec.com/fact-sheet/the-spot-r-connected-jobsite-platform/",
+    "https://www.triaxtec.com/resource/fact-sheet/fact-sheet-spot-r-evactag/",
+    "https://www.triaxtec.com/blog/introducing-spot-r-equiptag/",
+    "https://finance.yahoo.com/news/invixium-acquires-triax-technologies-expand-143300924.html",
+    "https://en.wikipedia.org/wiki/Triax_Technologies",
+    "https://www.cbinsights.com/company/triax-technologies",
+    "https://www.constructiondive.com/news/triax-technologies-develops-belt-clip-to-track-report-worker-safety-data/430566/",
+    "https://www.businessinsurance.com/business-insurance-2017-innovation-awards-triax-technologies-spot-r/",
+    "https://www.constructionjunkie.com/blog/2017/8/13/wearable-tracking-and-safety-device-spot-r-integrates-with-procore-platform"
+   ]
+  },
+  {
+   "name": "Reactec R-Link",
+   "verified": "confirmed",
+   "offline": "partial",
+   "does_personal_realtime_warning": "yes",
+   "form": "Wrist-worn smartwatch wearable. UWB proximity + HAVS/MSD vibration-exposure monitoring. Hazards must be instrumented: R-Link beacons on vehicles/plant + RFID tags on zones; a single gateway at the charging dock uploads to cloud analytics. No GPS, no camera, no depth sensor.",
+   "price": "Annual per-watch subscription (hardware bought separately). HAV+Proximity bundle listed POA / request-a-quote on shop.reactec.com (£, USD at checkout). Visible tiered per-watch/yr figures: £30 (41-100 watches) -> £46 -> £50 -> £54 (501-5000) — volume-discount enterprise-fleet pricing, plus watch hardware + beacon/RFID infra cost on top. Single-unit price gated behind quote.",
+   "funding": "University of Edinburgh spin-out (2001). Modest raise pre-exit (~£1.4M-$8.3M per source; Archangel Investors + Scottish Enterprise). Revenue ~$5.9M / ~£3.9M, ~47 staff. ACQUIRED by Ideagen on 2025-08-18 (undisclosed), folded into Ideagen's EHS/GRC compliance suite — no longer independent.",
+   "leaves_gap_for_us": "YES — wide, different problem/physics. R-Link is the archetype camp-B play: it protects workers by INSTRUMENTING the environment (bolt beacons on every vehicle, RFID-tag every zone) and having a radio bracelet feel proximity to those tags, then selling the cloud compliance dashboard. Three hard limits leave our lane open: (1) Not cheap for the buyer — per-watch annual SaaS + watch hardware + you must buy/deploy beacons and tags site-wide (enterprise fleet economics), vs our ~$141 BOM device. (2) Zero environment perception — no camera/vision/YOLO/depth; it is relative-distance-to-a-pre-placed-tag ('near beacon #7'), so it is BLIND to any un-tagged hazard, static obstacle, hole/edge, or untagged moving object, and does NOT do fall/edge detection. (3) Not an offline product — the UWB proximity ping is local (good), but the product you actually pay for is cloud-tethered (analytics, config, fleet visibility). Our wedge is untouched: cheap, ~30g, on-device OFFLINE camera+ToF+YOLO that reads the ACTUAL environment and gives instant bone-conduction/haptic warning for UN-instrumented hazards (machinery, danger zones, collisions, falls/edges, isolated work) with no beacons to install and no cloud subscription to get the alert. No overlap on the wedge.",
+   "sources": [
+    "https://www.reactec.com/products/r-link/proximity/",
+    "https://www.reactec.com/products/r-link/",
+    "https://www.reactec.com/products/r-link/havs/",
+    "https://shop.reactec.com/shop/subscriptions/r-link-annual-subscription-hav-proximity/",
+    "https://www.levitt-safety.com/specialty-products/sound-vibration/rlink",
+    "https://www.reactec.com/about/news/proximity-detection/",
+    "https://www.ideagen.com/company/news/ideagen-expands-safety-solutions-with-reactec-acquisition",
+    "https://www.businesswire.com/news/home/20250817122865/en/Ideagen-Expands-Safety-Solutions-With-Reactec-Acquisition",
+    "https://getlatka.com/companies/reactec",
+    "https://tracxn.com/d/companies/reactec/"
+   ]
+  },
+  {
+   "name": "Kwant.ai smart badge (OnTarget Technologies)",
+   "verified": "partly",
+   "offline": "no",
+   "does_personal_realtime_warning": "partial",
+   "form": "CONFIRMED — light wearable badge + hard-hat tag. 85.5×54×4.5 mm, 18.5 g / 15.5 g. Radios: GPS, BLE, LoRaWAN, RFID (NFC/RFID/UHF variants) + accelerometer. V2 badge has an 80 dB buzzer + shock detection; ATEX/intrinsically-safe variant exists. Even lighter than our ~30 g. No camera, no vision.",
+   "price": "CONFIRMED quote-only / enterprise. Public pricing is \"Custom Pricing\" across all 3 tiers (Onboarding & Orientation / Site Safety & Productivity / Workforce Analytics Platform); by-phone quote. Hardware + site gateways + cloud SaaS + Tier-1-GC customer roster = high five-figure+ station floor, per-workforce subscription. The specific '~$50k/site rollout' figure is PLAUSIBLE BUT UNVERIFIED (no public number); the shape — high floor, enterprise, structurally unaffordable to a small contractor/individual — is confirmed.",
+   "funding": "PARTIALLY VERIFIED (aggregators conflict). Confirmed: $3.9M seed, Mar 2022 (LAUNCH, Fairstead, Pearl Fund, 7BC, Forefront, Martinson, Serra Ventures). Lifetime total disputed: ~$12.4M (Wellfound/Crunchbase-style) vs. Series A label (PitchBook/Tracxn). Treat lifetime (~$12M-class, Series A) as estimate.",
+   "leaves_gap_for_us": "YES. Kwant is the badge/proximity + fall + geofence + cloud-workforce archetype — and it is exactly (1) infrastructure-dependent: badges 'communicate to edge sensors installed at the site' and 'stop transmitting once workers leave the jobsite' (no site gateways = no function); (2) cloud-dependent: cloud OnTarget/Kwant platform, LoRaWAN sensors 'transmit data every 52 seconds' — a ~52 s telemetry/monitoring cadence, NOT a sub-second collision-avoidance loop; (3) geofence/tag-limited: on-body alert (80 dB buzzer, 'wrong zone') only fires on pre-mapped zones / tag-proximity — blind to un-instrumented hazards (curb, pit edge, untagged moving load); (4) audible-only, no directional/haptic vision cue; (5) fall detection is reactive (>6 ft, detect-after-the-fact, notify others for faster rescue — '90% faster response'), not proactive avoidance; (6) management/control-room-centric ('real-time' = portfolio dashboard) and enterprise-priced. It vacates the same seam as the UWB-tag camp with a heavier cloud back-end. Our un-occupied angle: cheap ($100-300-class), self-contained, on-device-offline camera+ToF wearable that SEES un-mapped hazards with instant bone-conduction/haptic avoidance, zero site infra, zero gateways, no per-seat SaaS + data flywheel. Kwant can tell HQ 'worker X fell' 52 s later; it cannot tell the worker 'obstacle ahead, now' for a hazard nobody geofenced. CAUTION (whole field): buyer is enterprise EHS/GC/insurer not the worker, and Kwant's proven ROI is workforce-mgmt + compliance + faster rescue — a different job than autonomous avoidance; our GTM must reckon with who pays.",
+   "sources": [
+    "https://www.kwant.ai/smart-wearables",
+    "https://www.kwant.ai/fall-detection",
+    "https://www.kwant.ai/platform",
+    "https://www.kwant.ai/pricing",
+    "https://www.kwant.ai/blog/support-lone-worker-safety-on-construction-sites-with-smart-badges",
+    "https://www.kwant.ai/blog/how-to-use-smart-badges-for-construction-safety-workforce-management",
+    "https://www.machineq.com/solution/kwant-ai",
+    "https://market.thingpark.com/kwant-ai-proximity-detection-contact-tracing-starter-kit-smart-bands.html",
+    "https://softwarefinder.com/construction/kwant",
+    "https://www.kwant.ai/blog/kwant-ai-raises-3-9-million-seed-round-to-revolutionize-workforce-management",
+    "https://www.finsmes.com/2022/04/kwant-ai-raises-3-9m-in-seed-funding.html",
+    "https://wellfound.com/company/ontarget-technologies/funding",
+    "https://www.crunchbase.com/organization/ontarget-technologies",
+    "https://pitchbook.com/profiles/company/109041-40"
+   ]
+  },
+  {
+   "name": "SensorZone (Tag + Vision360) — GKD Technologies",
+   "verified": "confirmed",
+   "form": "Vehicle/machine-centric proximity warning, two lines: (1) PWS Core = worker wears passive-alert RFID TAG (hard-hat/vest clip, 3yr battery) + magnetically-mounted vehicle antennas create a 1-10m detection zone; (2) Vision360 = 4x AI cameras mounted ON the vehicle (machine-POV) detecting people/vehicles up to 20m. PWS Plus = hybrid of both. NOT a worker-worn camera/sensor for the worker's own path — all detection is anchored to the vehicle.",
+   "offline": "partial",
+   "does_personal_realtime_warning": "partial",
+   "price": "Not published — quote-only (\"GET PRICES\" form). Priced B2B per fleet/site: scales with # vehicles + workforce size + tech tier (tag vs camera vs hybrid). Hire/rent/rent-to-buy offered via resellers (e.g. TechRentals AU). Whole category hides price (ZoneSafe cost guide also gives no figures) — this is a site-license/fleet model, not a per-unit consumer/self-pay price. No consumer SKU.",
+   "funding": "GKD Technologies Ltd (UK, Wimborne; US office Dublin OH) — established ~20+ yrs, safety-control solutions. Tracxn/ZoomInfo list it as \"funded\" (1 undisclosed round); no acquisitions; revenue not disclosed. Traction is the real signal: 1,500+ active sites, 17 countries, 140M+ protected working-hours; North America rollout via Webber Inc. (Texas highways) after 3-6mo trial. Mature incumbent, not a startup.",
+   "leaves_gap_for_us": "YES — big gap. SensorZone's entire premise is MACHINE-POV: it protects the area around a vehicle and warns the OPERATOR; the worker's tag only vibrates when the worker enters a TAGGED-vehicle's RFID zone. It gives the worker ZERO awareness of their own surroundings — no \"hazard/edge/hole ahead of ME,\" no first-person environmental sensing. It only fires near equipped machinery (proximity-to-vehicle), not general hazards (fall/edge/isolation/fixed danger zones). It requires instrumenting every vehicle+every worker (antennas + tags) — heavy, capital B2B fleet install, quote-priced, no cheap self-serve unit. Second Eye's wedge is untouched: a cheap (~$141 BOM), ~30g WORKER-WORN device giving the worker on-device offline first-person hazard warning (bone-conduction/haptic) independent of any vehicle instrumentation. We are worker-POV + personal + low-cost + vehicle-agnostic; they are machine-POV + fleet-capital + operator-first.",
+   "sources": [
+    "https://www.sensorzone.io/pws-core",
+    "https://www.sensorzone.io/pws-plus",
+    "https://www.sensorzone.io/vision360",
+    "https://www.sensorzone.io/proximity-warning-faqs",
+    "https://www.sensorzone.io/get-a-quote",
+    "https://www.gkdtechnologies.com/products/proximity-warning-system/",
+    "https://tracxn.com/d/companies/gkdtechnologies/__OPZMfbayzP7ziozZG2exkbi3JmkfC6--OXpGgkJo4DM",
+    "https://www.zoominfo.com/c/gkd-technologies-inc/368839692",
+    "https://www.gkdtechnologies.com/press-media/news/webber-inc-rolls-out-sensorzone-in-north-america/",
+    "https://zonesafe.com/en-us/proximity-warning-system-cost-guide/"
+   ]
+  },
+  {
+   "name": "Newmetrix (FKA Smartvid.io)",
+   "verified": "partly",
+   "offline": "no",
+   "does_personal_realtime_warning": "no",
+   "form": "Pure software (cloud SaaS + mobile app). No hardware, no cameras of its own, NOT wearable. Hardware-agnostic: ingests photos/videos crews already capture for documentation (Procore, Autodesk BIM 360, Oracle Aconex, StructionSite, OxBlue site cameras).",
+   "price": "Not public. Model = % of project value / volume-based on a firm's total construction value (unlimited users + data). Small users ~thousands/yr, largest ~hundreds of thousands/yr. Enterprise now sold as custom Oracle Construction Intelligence Cloud module.",
+   "funding": "$22.4M total raised pre-acquisition (as Smartvid.io, founded 2015); 27 investors incl. Autodesk, Sony Innovation Fund, IA Capital Group, Building Ventures, Borealis, Companyon, Converge. Then ACQUIRED by Oracle 01-Oct-2022 (assets + IP; founders/leaders joined Oracle).",
+   "leaves_gap_for_us": "YES — gap is wide open. Newmetrix attacks safety from the management/compliance side: cloud, after-the-fact, project-level risk PREDICTION from jobsite imagery already shot, for safety managers and the C-suite. A Suffolk safety officer called it \"mostly observational; it's completely passive and most employees don't even know it's happening.\" Its products are literally named Safety Observations / Safety Monitoring / Predictive Analytics — none is worker-facing. It does nothing on Second Eye's axis: cheap (~$141 BOM), worn by the individual worker, on-device/offline, real-time personal 'hazard ahead' warning to THIS worker now. Complementary, not competitive. Note: it is no longer even an independent player — it's an Oracle SKU since Oct 2022.",
+   "sources": [
+    "https://www.oracle.com/corporate/acquisitions/newmetrix/",
+    "https://www.enr.com/articles/55605-oracle-buys-newmetrix-to-integrate-ai-tech-into-cloud-platform",
+    "https://datadrivenaec.com/tools/newmetrix",
+    "https://www.equipmentworld.com/technology/article/15114793/newmetrix-structionsite-use-ai-to-reduce-construction-risk",
+    "https://www.forconstructionpros.com/construction-technology/machine-grade-control-gps-laser-other/article/22881729/construction-safety-ai-from-the-field-to-the-csuite",
+    "https://www.ironpros.com/construction-safety-software/article/22908537/oracle-embeds-newmetrix-safety-risk-ai-in-oracle-construction-intelligence-cloud",
+    "https://www.crunchbase.com/organization/newmetrix",
+    "https://pitchbook.com/profiles/company/121087-72"
+   ]
+  },
+  {
+   "name": "Guardhat Communicator / Aatmunn (formerly Guardhat Inc.; Lantronix = chip supplier, not owner)",
+   "verified": "partly",
+   "offline": "no",
+   "does_personal_realtime_warning": "partial",
+   "form": "Smart hardhat (camera + stereo mics + sensors + RTLS, Android on Qualcomm SoC) — but the hardware was discontinued; maker rebranded to Aatmunn (Jan 2024) and is now a device-agnostic connected-worker SOFTWARE platform (SPANR).",
+   "price": "Enterprise / subscription, quote-only (multi-year contracts). Legacy smart-hardhat class ~$1,500+; no public per-seat figure. The stated $1.5k-5k range is plausible for the old helmet but unconfirmed.",
+   "funding": "Lifetime ~$38.5M-$44M (Crunchbase/Dealroom, figures conflict); press cites a ~$20M round Aug 2024. Estimate, not confirmed single number.",
+   "leaves_gap_for_us": "YES — large gap, and the pivot widens it. Corrections to the claim: (1) \"Lantronix\" is the chip/module supplier (Open-Q 626 uSOM), NOT the owner — the company is Guardhat Inc., rebranded Aatmunn Jan 2024. (2) The legacy hardhat ran some on-hat compute but its architecture is fundamentally \"connect back to a remote command center\" (share location with home base + voice/video + panic), so offline=no is correct — it is connected situational-awareness for a control room, not autonomous on-body avoidance. (3) It did detect proximity to hazardous materials/temps/moving equipment (hence partial personal warning), but framed around comms/monitoring. (4) CRITICAL: Aatmunn ABANDONED the hardware wearable and is now enterprise safety SOFTWARE (Lone Worker, Gas Detection, Access Zoning, Asset Tracking, Inspections) — cloud monitoring/compliance/analytics for supervisors, \"single pane of glass,\" device-agnostic. The form-closest incumbent has vacated the exact seam Second Eye targets: a cheap ($100-300-class), self-contained, on-device-OFFLINE camera+ToF PERSONAL-avoidance wearable with instant bone-conduction/haptic warning, no cloud, no control tower, no per-seat SaaS, plus a data flywheel. Nobody occupies that. CAUTION: Guardhat's exit from smart-hardhat hardware is also a market warning — expensive smart hats failed as a business; our answer must be cheap + sold right (likely B2B / workers'-comp-subsidized GTM), not a $1k smart hat.",
+   "sources": [
+    "https://www.lantronix.com/resources/case-studies/guardhat/",
+    "https://www.lantronix.com/newsroom/press-releases/lantronix-delivers-iot-connectivity-guardhat-communicator-smart-hardhat/",
+    "https://www.prnewswire.com/news-releases/guardhat-rebrands-as-aatmunn-leading-the-global-charge-in-digitizing-frontline-worker-safety-302042276.html",
+    "https://aatmunn.com/",
+    "https://aatmunn.com/media/guardhat-rebrands-as-aatmunn-leading-the-global-charge-in-digitizing-frontline-worker-safety",
+    "https://www.cbinsights.com/company/guardhat",
+    "https://www.crunchbase.com/organization/gaurdhat-technologies",
+    "https://www.forconstructionpros.com/business/construction-safety/news/21195384/advanced-technologies-continue-to-revolutionize-the-hardhat"
+   ]
+  },
+  {
+   "name": "Blackline Safety G7/G8 (lone-worker monitor; gas + man-down + monitoring-center telematics)",
+   "verified": "confirmed",
+   "offline": "no",
+   "does_personal_realtime_warning": "no",
+   "form": "Body-worn wearable lone-worker detector (belt/chest-clip, ~192-238g with gas cartridge). Optional single/multi-gas cartridge. NOT a fixed camera, NOT a passive tag, and NO camera/computer-vision. G7x variant pairs with a portable G7 Bridge satellite base station (Iridium, up to 5 devices via 900MHz radio ~2km).",
+   "funding": "Public company, TSX: BLN (formerly TSXV). Record FY2025 revenue US/CAD $150.5M; Annual Recurring Revenue $84.5M (+27% YoY); Net Dollar Retention 128%; 6th consecutive quarter of positive Adjusted EBITDA ($6.1M FY25). Well-capitalized incumbent, not a startup — hardware-enabled SaaS at scale.",
+   "price": "CORRECTION to card (was listed \"未公开\"): pricing is now PUBLISHED on blacklinesafety.com/solutions/services/pricing-plans. Transparent monthly rates (USD, device lease amortized over 4yr + service plan): G7 Lone Worker from ~$33/mo; G7 Multi-Gas from ~$38/mo; G6 Single-Gas from ~$10/mo; EXO area monitor from ~$180/mo. Multi-currency (USD/CAD/EUR/GBP/AUD). Purchase and rental options also offered. Bottom line unchanged: it is a device + mandatory recurring subscription (connectivity + Blackline Live monitoring), i.e. an ongoing SaaS cost, not a one-time buy.",
+   "leaves_gap_for_us": "YES — wide open, and structurally so. Blackline is the ARCHETYPE of the opposite architecture: its entire value is \"route the alarm to a monitoring center,\" so it MUST be connected (4G/5G, satellite as coverage backup) — there is no offline mode; the wearable is dumb telematics + a cloud/SOC. Detection is REACTIVE and REMOTE-facing: fall/no-motion/man-down/missed-check-in/SOS + gas readings — it tells a remote monitor that something already happened; it does NOT give the worker a real-time forward warning about a hazard ahead (obstacle, moving machinery, danger-zone boundary, imminent collision). Zero on-device perception: no camera, no computer vision, no depth/ToF. So the whole 'cheap + lightweight-wearable + on-device OFFLINE + real-time PERSONAL hazard prediction that warns the worker themselves (bone-conduction/haptic), no monitoring-center dependency, no mandatory SaaS' quadrant is untouched by Blackline. Caveats: (a) Blackline owns the gas-detection + lone-worker-monitoring beachhead and has scale/brand/distribution — do NOT frame Second Eye as a lone-worker-monitoring competitor (that's their game and needs connectivity by definition); frame it as a complementary, offline, prevention-at-the-edge layer. (b) Their 'Custom Analytics / predictive reporting' is fleet-level dashboard analytics, NOT individual real-time hazard prediction — different thing; don't let their 'predictive' marketing word be mistaken for personal collision warning.",
+   "sources": [
+    "https://www.blacklinesafety.com/solutions/lone-worker/g7-lone-worker",
+    "https://www.blacklinesafety.com/solutions/services/pricing-plans",
+    "https://www.blacklinesafety.com/hubfs/2021-12-08-G7x%20Datasheet-V16-1.pdf",
+    "https://support.blacklinesafety.com/products/g7c",
+    "https://www.blacklinesafety.com/about/press-releases/blackline-safety-reports-record-fiscal-2025-revenue-of-150.5-million-and-adjusted-ebitda-of-6.1-million",
+    "https://www.businesswire.com/news/home/20260115434794/en/Blackline-Safety-Reports-Record-Fiscal-2025-Revenue-of-$150.5-million-and-Adjusted-EBITDA-of-$6.1-million"
+   ]
+  },
+  {
+   "name": "Academic Smart-Helmet / egocentric-camera hazard-detection prototypes (ESP32-CAM + YOLO / helmet-cam + open-vocab detectors) — MDPI/arXiv/ScienceDirect 2022–2025",
+   "verified": "confirmed",
+   "offline": "partial",
+   "does_personal_realtime_warning": "partial",
+   "form": "Two distinct research lines, both wearable/egocentric (helmet-mounted, first-person camera). (A) Low-cost ESP32-CAM + YOLO smart helmets with buzzer/LED/vibration — genuinely tiny/cheap, MCU-class, offline-capable. (B) Higher-end egocentric hazard detection (e.g. \"EgoSafe\" using Grounding DINO open-vocabulary detector; ScienceDirect S0926580525000883; arXiv PEDESTRIAN egocentric-pavement obstacle dataset Dec 2025) — wearable camera but heavy cloud-grade models, not proven on-device. NONE is a shipping product.",
+   "price": "Not a product. Prototype BOM is Arduino/ESP32-class (tens of dollars). No commercial price exists for the egocentric on-device-warning form. NOTE: the commercial \"smart helmet\" market that DOES exist is a different animal — HD-camera live-streaming + GPS + SOS comms helmets (e.g. Jarsh WorkAlive, ~$500K seed, Mumbai Angels) that stream to a supervisor dashboard, not offline egocentric obstacle warning.",
+   "funding": "The academic prototypes themselves are ungerfunded research (university labs). Adjacent commercial players are funded but architecturally different: Jarsh Safety $500K seed (streaming/comms helmet, AI-hazard-detection is roadmap not shipping); Intenseye / Surveily / Visionify / Chooch / viAct = well-funded but FIXED-camera + cloud EHS dashboards, or smartwatch + GPS-geofence + biometrics (viAct) — NONE do cheap on-device egocentric vision warning.",
+   "leaves_gap_for_us": "YES — wide open. The gap is fully intact. Verified reality: (1) The cheap egocentric-camera + on-device-YOLO + haptic personal-warning concept is PROVEN FEASIBLE and NEEDED (many peer-reviewed papers 2022–2025), which validates demand — but NOBODY has turned it into a cheap, mass-produced, reliable product with a data flywheel. (2) The commercial worker-safety field solves a DIFFERENT problem with a DIFFERENT architecture: fixed CCTV + cloud analytics for PPE-compliance / near-miss reporting / EHS dashboards (Intenseye, Surveily, Visionify, Chooch), OR wearables that are streaming-cams (Jarsh) or geofence-smartwatches (viAct) — cloud-dependent, site-infrastructure-bound, supervisor-facing, expensive/SaaS. (3) The one true overlap — on-device egocentric real-time PERSONAL hazard warning — is exactly Second Eye's core competence (camera + ToF + YOLO + bone-conduction, offline, ~$141 BOM, ~30g) and it exists ONLY as academic prototypes. Second Eye's differentiator vs. these prototypes: productization + ToF depth (they're mostly RGB-only) + reliability + data flywheel. Caveat/watch-item: this is a fast-moving research area (Grounding DINO / lightweight VLMs on-device), and any of the funded wearable players (esp. Jarsh) could pivot from streaming into on-device detection — the moat is execution + reliability + reimbursement/channel, not the idea.",
+   "sources": [
+    "https://www.mdpi.com/1660-4601/19/23/16312 (MDPI IJERPH — Smart Helmet-Based Proximity Warning System, 2022; full text 403-blocked, confirmed via abstract/search)",
+    "https://www.sciencedirect.com/science/article/abs/pii/S0926580525000883 (ScienceDirect Automation in Construction — Egocentric camera-based static-hazard detection / EgoSafe, uses Grounding DINO; abstract via search)",
+    "https://arxiv.org/pdf/2512.19190 (arXiv — PEDESTRIAN: Egocentric Vision Dataset for Obstacle Detection on Pavements, Dec 2025; dataset+benchmarks, MobileNetV3-class, no deployment)",
+    "https://www.ijcrt.org/papers/IJCRT25A5118.pdf (IJCRT — IoT-Based Workers Smart Helmet, ESP32-CAM research prototype)",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12091821/ (PMC — YOLOv8-CGS helmet detection)",
+    "https://yourstory.com/2025/03/hyderabad-based-startup-industrial-safety-ai-wearable-technology (YourStory — Jarsh Safety wearable AI helmet; AI hazard detection = roadmap w/ 5G+edge)",
+    "https://jarshsafety.com/ (Jarsh WorkAlive — self-described 'real-time worksite monitoring and communication platform'; camera empowers supervisors via remote monitoring, i.e. streaming not on-device warning)",
+    "https://www.forbes.com/profile/jarsh-safety/ (Jarsh funding — $500K seed, Mumbai Angels)",
+    "https://www.viact.ai/post/the-future-of-safety-aiot-wearable-technology-for-the-modern-workplace (viAct — smartwatch + GPS geofence 30m danger-zone + biometrics; CCTV vision is separate, NOT egocentric)",
+    "https://www.intenseye.com/ , https://surveily.com/ , https://visionify.ai/ , https://www.chooch.com/solutions/workplace-safety/ (commercial safety-AI = fixed-camera + cloud EHS dashboards, not wearable/offline/personal)"
+   ]
+  },
+  {
+   "name": "SICK / Pilz / Banner / Keyence / Omron (safety light curtains + safety PLC/relays + safety laser scanners + safety radar)",
+   "verified": "confirmed",
+   "offline": "yes",
+   "does_personal_realtime_warning": "no",
+   "form": "Fixed-mount / machine-mounted opto-electronic + laser + radar guarding, hardwired (OSSD) to a safety relay or safety PLC and the E-stop circuit. Includes light curtains (emitter/receiver posts), safety laser scanners (SICK nanoScan3, Keyence SZ-V), and safety radar (SICK safeRS/safeRS3). Rides the MACHINE/AGV, never the worker's body. Not wearable, not personal (confirmed by Keyence's own SZ-V page: \"fixed-mounted safety device, not wearable\").",
+   "price": "Light curtain ~$500-3,000/pair; a compliant cell adds a safety relay/PLC (Pilz PNOZ, SICK Flexi Soft, Banner SC10, AB GuardLogix, Siemens F-CPU) + integration labor, pushing installed cost to ~$5k-30k+. Capital equipment sold B2B via distributors/system integrators; NOT consumer/personal.",
+   "funding": "N/A — entrenched incumbents, not startups. SICK, Keyence, Omron, Pilz are large established/public industrial firms; Banner is a mature private company. No venture round to track; this is the baseline everyone respects, not a fundable-startup threat.",
+   "leaves_gap_for_us": "YES — wide open. They own the CERTIFIED machine-stop layer (ISO 13849 / SIL3 / PL e, IEC 61496/61508) — legally the safety function, which we neither can nor should contest. But their protection is fixed-mounted, machine-centric, AREA-based, and capital-priced, and it acts on the MACHINE (stop/slow) rather than warning the individual. They deliberately do NOT make a cheap, body-worn, offline device that warns the individual worker in real time (mobile machinery / danger zone / collision / fall / lone-work). A dedicated search returned ZERO body-worn personal-warning products from any of the five — that entire category is served by OTHER vendors (SlateSafety, Everbridge, Fortecho, MOKOSmart, GaTech AwareSite, Spacebands, Reactec). That personal-wearable-offline lane is exactly Second Eye's transferable niche (camera + ToF + YOLO + bone-conduction riding on the person). Caveat: position as a COMPLEMENTARY layer, never a replacement for the certified stop — and their certification is a moat against us too (buyers may frame an uncertified wearable as \"nice-to-have,\" not \"safety\").",
+   "sources": [
+    "https://www.sick.com/us/en/products/safety/safety-light-curtains/c/g184853",
+    "https://www.sick.com/ch/en/products/safety/safety-radar-sensors/c/g569360",
+    "https://www.therobotreport.com/sick-launches-nanoscan3-safety-laser-scanner/",
+    "https://www.sick.com/us/en/speed-and-separation-monitoring-with-sicks-sbot-safety-system-and-urcap-for-universal-robots/w/press-urcap",
+    "https://www.bannerengineering.com/us/en/products/machine-safety/safety-light-curtains.html",
+    "https://www.keyence.com/products/safety/laser-scanner/sz-v/",
+    "https://industrialmonitordirect.com/blogs/knowledgebase/safety-system-integration-legal-bypassing-of-light-curtains-via-plc-and-safety-relay-requirements"
+   ]
+  },
+  {
+   "name": "LIPSafeguard 3D Virtual Fence (LIPS Corporation)",
+   "verified": "confirmed",
+   "form": "Fixed, infrastructure-mounted multi-camera system installed AT a robot/cobot cell. Runs on LIPSedge 3D ToF/stereo cameras. NOT wearable, NOT a tag — vendor's \"mounted per cell\" claim is accurate, not exaggerated.",
+   "offline": "partial",
+   "does_personal_realtime_warning": "no",
+   "price": "Cameras $199-599/unit (LIPSedge M3/DL/AT); safety solution itself is enterprise/project-integration pricing (per-cell, undisclosed quote). No public LIPSafeguard SKU or subscription found — sold as a cell-integration project.",
+   "funding": "~$5.2M raised, 1 round, Mar 2018 (investors: ANRI, Gunosy +1). Taipei (Neihu), Taiwan. ~$6.9M annual revenue (2026). Small, hardware-vision company — not a heavily-funded safety-software player.",
+   "leaves_gap_for_us": "YES — wide gap, minimal real overlap. LIPSafeguard is machine-guarding, not personal warning: it protects the worker by SLOWING/STOPPING THE ROBOT, never by alerting the person (no haptic/audio/wearable feedback to the human at all). It is a FIXED camera bolted to one robot cell — it only helps when a worker steps into a pre-mapped zone around that specific machine; it cannot travel with a mobile/roving worker, and has no lone-worker, fall-detection, or outdoor/construction capability. So our angle — CHEAP (~$141 BOM) + WEARABLE (~30g, moves with the worker anywhere) + OFFLINE + PERSONAL real-time pre-warning to the person via bone-conduction/haptic — is architecturally the opposite product and sits in open space. Caveat: they share the 'edge 3D-ToF perception' tech DNA and could in theory add a wearable, but nothing indicates intent; their entire model, pricing, and cert path are built around fixed per-cell machine-stopping. They occupy 'AI camera guards a machine'; we occupy 'AI device guards a person.' Different buyer (plant automation eng vs. worker/EHS), different failure mode. Gap intact.",
+   "sources": [
+    "https://lips-hci.com/post/lipsafeguard-3d-virtual-fence-solution-for-smart-robotic-factories",
+    "https://www.lips-hci.com/post/elevate-factory-safety-standards-lipsafeguard-3d-virtual-fence",
+    "https://www.lips-hci.com/3d-skeleton-sdk",
+    "https://store.lips-hci.com/",
+    "https://www.lips-hci.com/product-page/lipsedge-at-standalone-fpga-based-3d-tof-camera",
+    "https://store.lips-hci.com/products/lipsedge-s315",
+    "https://www.crunchbase.com/organization/lips-corporation",
+    "https://www.digitimes.com/news/a20250627PD213/3d-vision-ai-cameras-production-taiwan.html"
+   ]
+  },
+  {
+   "name": "viAct / YAFE / Invigilo / Kognition / Superb AI (AI-camera danger-zone & virtual safety fence)",
+   "verified": "partly",
+   "form": "Fixed CCTV + edge-box computer vision on infrastructure — NOT worn. viAct's \"viMOV\" is the closest to mobile: a self-contained portable camera/IoT box you carry/place on site (confirmed \"works without electricity & internet,\" on-device processing), but still a placed unit, not body-worn. Invigilo (SafeKey) and Kognition ride existing camera networks. Alerts go to a dashboard / PA / WhatsApp-Teams-SMS, not to a personal haptic/bone-conduction cue on the worker's body. TWO PLAYERS ARE MISCATEGORIZED: Kognition = physical security for smart buildings (access/intrusion/weapons), not worker OSH; Superb AI = a training-data/MLOps labeling platform, not a safety product at all. YAFE = manufacturing plant-floor safety + quality/MES, India-centric.",
+   "offline": "partial",
+   "price": "SaaS + edge hardware, per-camera/per-site subscription; no public pricing (all \"book a demo / free risk report\"). Model is site-license CapEx+OpEx, not a per-worker consumer device.",
+   "funding": "viAct ~$9.3M total ($7.3M Series A, Apr 2025, led by Venturewave; earlier $2M seed via SOSV/Vectr). Kognition ~$2.18M (Alumni Ventures, Ben Franklin, Dreamit), ~100 deployments. Superb AI ~$42.8M incl. $9.5M pre-IPO, targeting 2026 IPO (but it's a labeling-tools company, not a safety competitor). Invigilo — Singapore/NUS-backed, amount undisclosed. YAFE — undisclosed.",
+   "offline_note": "Genuinely offline for viAct On-Prem + viMOV (explicit \"zero cloud dependency\" / \"no internet\"). But offline here means the FIXED SITE runs disconnected — it is site-level edge inference, not a low-power on-body chip. The default/standard products are hybrid (edge inference + cloud analytics/dashboard).",
+   "does_personal_realtime_warning": "partial",
+   "leaves_gap_for_us": "YES — a real, defensible gap. These are infrastructure plays: fixed/placed cameras watching a zone, alerting a supervisor's dashboard or a site PA/messaging app. None deliver a PERSONAL, on-body, real-time danger cue to the individual worker (our bone-conduction/haptic \"obstacle/hazard ahead\" on a ~30g wearable at ~$141 BOM). They protect a mapped zone, not a moving person — coverage stops where a camera doesn't see (occlusion, a worker who walks off the instrumented area, lone/mobile work, confined spaces, temporary sites). Their \"offline\" is a site edge box, not a wearable that goes everywhere the worker goes. And their economics are per-camera/per-site enterprise SaaS, leaving the cheap, per-worker, portable, ego-centric-view segment open. Where they DON'T leave a gap: static danger-zone/virtual-fence intrusion on a fixed installation (crane radius, press line, exclusion zone) — that's their home turf and a wearable competes poorly there. Our wedge is the worker-worn,ego-centric, PA-independent personal alert for mobile/lone/occluded work, not zone surveillance. Caveat: viMOV shows the incumbent is already pushing toward portable+offline, so \"offline\" alone is not our moat — \"worn + personal haptic + per-worker price\" is.",
+   "sources": [
+    "https://www.viact.ai/vimov",
+    "https://www.viact.ai/dangerzonedetection",
+    "https://www.viact.ai/video-analytics-solution/open-edge-detection",
+    "https://venturewave.com/viact-series-a-funding/",
+    "https://yafe.io/products",
+    "https://yafe.io/projects/hazard-zone-intrusion",
+    "https://www.invigilo.ai/product",
+    "https://www.kognition.ai/platform/",
+    "https://www.crunchbase.com/organization/kognition",
+    "https://superb-ai.com/en/resources/blog/seriesc",
+    "https://en.wowtale.net/2025/12/16/233076/"
+   ]
+  },
+  {
+   "name": "UWB/RFID/BLE personal proximity-warning cluster (ZoneSafe/Brigade, Litum, Pozyx, ELOKON, SensorZone/SiteZone, Spacebands, Ubiquicom)",
+   "verified": "confirmed",
+   "offline": "yes",
+   "does_personal_realtime_warning": "partial",
+   "form": "Worker wears a dumb vibrating TAG (RFID/UWB/BLE), ~<40g; the hazard side (vehicle/machine) carries the antenna/anchor. It is a radio proximity transponder, NOT a sensor — the worker-worn device has no camera and no compute. Incumbents are now adding AI cameras (Litum PathAware, Pozyx, ELOKON ELOvision, SensorZone PWS Plus) but ONLY as fixed vehicle-/site-mounted units, never as a personal wearable.",
+   "price": "CONFIRMED from Cisco-Eagle live ZoneSafe list: single-vehicle system $3,320; 2-antenna $4,748; 4-antenna $6,636; vibrating personnel/driver tag $210 each; tag tester $2,003; wireless tag charger $67. => real cost is ~$3.3k-6.6k PER VEHICLE + ~$210/tag (brief's '$1k-3k/vehicle + $30-100/tag' was understated). Spacebands is SaaS: ~$32/wearable/month (US) or £25-30/mo UK on 1-3yr contract. Litum/Pozyx/ELOKON/SensorZone: quote-only, contact-for-price.",
+   "funding": "Not surfaced in this pass (private industrial vendors; several are established RTLS/electronics cos — Brigade Electronics owns ZoneSafe; Litum & Pozyx are funded RTLS companies; Spacebands is a UK startup that pivoted from COVID social-distancing). No specific round figures verified — mark as unconfirmed rather than asserting.",
+   "leaves_gap_for_us": "YES — clear gap. (1) The tag is BLIND: it only measures radio distance to a *tagged* object; it cannot identify WHAT the hazard is. Our camera+YOLO knows the object class. (2) Needs infrastructure on BOTH sides — every hazard must be pre-fitted with an antenna/anchor; untagged hazards (open edges, holes, unmarked machinery, an untagged vehicle) are invisible. A self-contained camera wearable needs ZERO site infra and sees untagged hazards. (3) No fall/drop-off detection (the #1 construction fatality) — their whole model is vehicle<->pedestrian collision; our downward-ToF (already in V1 per HO-006) + camera cover it. (4) The incumbents' own scramble to bolt on AI cameras proves the value is moving to vision — but they leave the 'cheap personal semantic wearable' slot empty. THEIR EDGE (be honest, so position as complement not replacement): RF sees through dust/smoke/dark/no-line-of-sight where our camera fails; near-zero false-negatives on a tagged vehicle behind a wall; 3-year no-charge tag battery. Positioning: semantic + infrastructure-free + fall detection layered ON TOP of the proximity layer they own.",
+   "sources": [
+    "https://www.cisco-eagle.com/category/9335/zonesafe-proximity-alarms",
+    "https://zonesafe.com/en-us/how-zonesafe-proximity-alert-system-work/",
+    "https://brigade-electronics.com/en-us/detection-systems/zonesafe/",
+    "https://litum.com/forklift-collision-proximity-warning/",
+    "https://www.pozyx.io/solutions/industry-4-0/forklift-collision-avoidance",
+    "https://www.elokon.com/en-US/material-handling/eloshield-vehicle-pedestrian-proximity-detection",
+    "https://www.sensorzone.io/pws-plus",
+    "https://www.sensorzone.io/pws-core",
+    "https://www.spacebands.com/company/faqs",
+    "https://www.spacebands.com/en-us/pricing-plan/pricing",
+    "https://www.ubiquicom.com/en/proximity-plus/"
+   ]
+  },
+  {
+   "name": "Guardhat/Aatmunn, Blackline Safety, Kinetic (connected-worker smart wearables) — three distinct players bundled as one",
+   "verified": "partly",
+   "offline": "no",
+   "does_personal_realtime_warning": "partial",
+   "form": "Worn devices — but three different form factors bundled in the claim: (a) Guardhat/Aatmunn HC1 = smart hard-hat with 13MP camera, ~800g (1lb 12.2oz), 8-12h battery; (b) Blackline G7/G8 = clip-on/wearable gas+safety monitor (no camera); (c) Kinetic Reflex = belt/waistband IMU clip (no camera). None is lightweight glasses; the helmet is ~800g vs our ~30g.",
+   "funding": "Guardhat/Aatmunn: private, ~$38.5-40M raised (Series B led by General Catalyst, Durable Capital, Annox Capital); rebranded to Aatmunn Jan 2024, remains independent. Blackline Safety: PUBLIC (TSX: BLN), record FY2025 revenue $150.5M (+18% YoY), ARR $84.5M, first full year of positive adj. EBITDA ($6.1M) — a real scaled incumbent, not a startup. Kinetic: private (funding not confirmed this pass; customers incl. PepsiCo).",
+   "price": "Guardhat HC1: from $1,500/helmet + platform subscription (~10x our $141 BOM). Blackline G7: enterprise hardware + mandatory cloud/cellular subscription (undisclosed list). Kinetic Reflex: enterprise SaaS+device (undisclosed). All enterprise, subscription-locked; none is a cheap standalone unit.",
+   "leaves_gap_for_us": "YES — large, clean gap. VERDICT: the claim conflates 3 different products; NONE does cheap + fully-offline + on-device egocentric hazard VISION warning the wearer of external dangers. Specifics: (1) Guardhat/Aatmunn is the closest (worn + on-body camera) but its proximity/hazard detection is BEACON/UWB + RFID-TAG + GPS based (requires facility infrastructure buildout), NOT camera vision; its 13MP camera is for VOIP video calls streamed to remote support/supervisor teams, NOT egocentric AI warning to the wearer; and it is cloud/IIoP-platform dependent — fails offline and fails 'camera warns the wearer'. (2) Blackline has NO camera at all — gas + fall + no-motion + SOS only, and is hard cloud/cellular/satellite-dependent (streams to 'Blackline Live' portal); it's telemetry-to-supervisor, not personal real-time hazard perception. (3) Kinetic Reflex IS on-device + haptic + real-time, but IMU-only (no camera, explicitly no video) and warns only about the wearer's OWN posture/ergonomics (bending/twisting) — not external machinery/vehicle/collision/fall-edge hazards. So our wedge stands: $141 BOM vs $1,500+ helmet/enterprise gas kit; fully-offline on-device YOLO+ToF egocentric vision warning the wearer of external hazards with zero infrastructure (no beacons to install, no cellular/cloud); ~30g wearable. Caveats to respect: Blackline is a well-funded public incumbent (~$150M rev) with brand + enterprise sales channels — they could add vision later; Guardhat already owns the on-helmet camera hardware and an AI platform, so 'add on-device egocentric vision' is a plausible move for them. Our defensibility must lean on cheap + zero-infrastructure + genuinely offline, plus the data flywheel.",
+   "sources": [
+    "https://www.blacklinesafety.com/about/press-releases/blackline-safety-reports-record-fiscal-2025-revenue-of-150.5-million-and-adjusted-ebitda-of-6.1-million",
+    "https://www.blacklinesafety.com/solutions/personal-gas-detection/g7-single-gas",
+    "https://time.com/collection-post/5911407/hc-1-communicator/",
+    "https://www.atexshop.com/guardhat-is-hc1-1-communicator-smart-hardhat.html",
+    "https://www.crunchbase.com/organization/gaurdhat-technologies",
+    "https://www.dbusiness.com/daily-news/industrial-iot-provider-guardhat-in-detroit-draws-40m-in-total-funding/",
+    "https://numorpho.org/usecases/aatmunn-guardhat-review/",
+    "https://kineticcomp.com/reflex-wearable",
+    "https://www.newequipment.com/home/product/55121070/72868-kinetic-reflex-wearable-worker-safety-device-increases-ergonomics"
+   ]
+  },
+  {
+   "name": "Build AI (egocentric factory glasses) + ARMOR (robot egocentric perception)",
+   "verified": "partly",
+   "offline": "partial",
+   "does_personal_realtime_warning": "no",
+   "form": "Head/neck-mounted first-person camera (Build AI = monocular data-recorder glasses); ARMOR = body-mounted ToF sensor array. Neither is worker-worn safety PPE.",
+   "price": "n/a — neither is a sold product. Build AI: no device price (it's a data play; company raised $15M seed from Abstract Ventures, Pear VC, HF0). ARMOR: academic prototype, no price.",
+   "funding": "Build AI: $15M (seed, later expanded; Abstract Ventures, Pear VC, HF0, ZFellows). ARMOR: n/a (Apple ML Research + CMU research paper, arXiv 2412.00396).",
+   "leaves_gap_for_us": "YES — big gap, but narrower than the source note claimed. CONFIRMED both are adjacent/non-safety: Build AI = a monocular head-cam that RECORDS factory workers to build robot-manipulation training data (Egocentric-100K, 100k+ hrs, open-sourced); the worker gets zero safety alert — it's record-now-train-robots-later, the OPPOSITE of real-time warning. ARMOR = ToF perception ON A HUMANOID ROBOT (Fourier GR1) for the robot's own collision avoidance; the 'wearer' is a robot, not a human. So neither does personal real-time worker warning. HOWEVER the note's absolute claim 'NOBODY ships a worker-worn personal safety alerter' is REFUTED by adjacent search: a live smart-helmet category DOES ship exactly that today — Guardhat HC1 (on-device processing, proximity detection to moving equipment, warns the wearer) and viAct smart helmet ('AI processing locally on-site, zero cloud dependency' + audio alerts to the worker). Those prove on-body offline personal alerting is NOT novel. The true open corner Second Eye can take: cheap (~$141 BOM) + ~30g + NO subscription + individual-worker-purchased + offline personal collision/obstacle alerter whose alert serves the WEARER, not a supervisor dashboard. Incumbents are all expensive enterprise 'connected-worker' SaaS (per-helmet + hidden subscription, contact-sales pricing, supervisor control-room, skewed to fall/PPE/location not dedicated forward-obstacle avoidance). Wedge = price + weight + individual-buy + alert-for-worker-not-boss; do NOT pitch 'offline' or 'personal alerting' as the novelty — both are already claimed.",
+   "sources": [
+    "https://mikekalil.com/blog/build-ai-ecocentric-100k-dataset/",
+    "https://www.humanoidsdaily.com/news/build-ai-scales-to-100-000-hours-as-data-scaling-becomes-robotics-new-frontier",
+    "https://www.eddy.build/",
+    "https://arxiv.org/abs/2412.00396",
+    "https://machinelearning.apple.com/research/armor-egocentric",
+    "https://www.viact.ai/iot/smart-helmet",
+    "https://www.unitedsafety.net/safety-solutions/real-time-solutions/smart-hardhat/",
+    "https://www.devopsschool.com/blog/top-10-ai-worker-safety-monitoring-tools-in-2025-features-pros-cons-comparison/"
+   ]
+  }
+ ]
+}

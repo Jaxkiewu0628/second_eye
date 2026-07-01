@@ -57,6 +57,8 @@ Not a blocker. Jackie owns YCane (Conrad T&C). New tech is his own post-2023 bui
 - `research/competitive-data-2026-07.json` — **全球竞品原始数据(157 家,价格/离线/订阅/来源)— scan 的可复用底数据**
 - `research/competitive-pricing-2026-07.md` — **价位 × 功能对比表(从上面提取)**
 - `research/feature-matrix-2026-07.md` — **功能矩阵:低价组 vs 高价组(各产品有哪些功能)**
+- `research/worker-safety-feasibility-2026-07.md` — **邻近市场:高危工人离线安全预警的蓝海+可行性验证(结论:CONDITIONAL,当融资期权不当第二产品)**
+- `research/worker-safety-data-2026-07.json` — 上面的原始数据(细分场景+玩家核实)
 - `research/deep-research-raw-2026-06-29.json` — raw research archive
 - `todo.md` — action items
 
